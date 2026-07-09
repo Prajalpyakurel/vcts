@@ -26,7 +26,7 @@ export default function GuestLoginLayout({
                     href={home()}
                     className="relative z-20 flex items-center text-lg font-medium"
                 >
-                    {system.logo ? (
+                    {system?.logo ? (
                         <img
                             src={`storage/${system.logo}`}
                             alt="Your logo"
@@ -43,7 +43,7 @@ export default function GuestLoginLayout({
                         href={home()}
                         className="relative z-20 flex items-center justify-center lg:hidden"
                     >
-                        {system.logo ? (
+                        {system?.logo ? (
                             <img
                                 src={`storage/${system.logo}`}
                                 alt="Your logo"
