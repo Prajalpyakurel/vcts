@@ -4,7 +4,6 @@ import {
     activities,
     blogs,
     contacts,
-    departments,
     downloads,
     events,
     facilities,
@@ -65,7 +64,6 @@ export default function Header() {
     const navigationMenus = [
         { name: 'Messages', link: boardMembers().url },
         { name: 'Faculty', link: teachers().url },
-        { name: 'Department', link: departments().url },
         { name: 'About Us', link: aboutUS().url },
     ];
 

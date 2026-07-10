@@ -18,7 +18,6 @@ import {
     facultyIndex,
     boardMemberMessageIndex,
     eventIndex,
-    departmentIndex,
     downloadIndex,
     systemInformationEdit,
     informationIndex,
@@ -35,7 +34,6 @@ import {
     CalendarDays,
     Info,
     GraduationCap,
-    Building2,
     Download,
     Settings,
     SquarePenIcon,
@@ -89,11 +87,6 @@ const mainNavItems: NavItem[] = [
     },
 
     // Academic Structure
-    {
-        title: 'Departments',
-        href: departmentIndex(),
-        icon: Building2,
-    },
     {
         title: 'Faculties',
         href: facultyIndex(),

@@ -14,7 +14,6 @@ use App\Http\Controllers\Backend\CurriculumSyllabusController as BackendCurricul
 use App\Http\Controllers\Backend\FacultyController as BackendFacultyController;
 use App\Http\Controllers\Backend\BoardMemberMessageController as BackendBoardMemberMessageController;
 use App\Http\Controllers\Backend\EventController as BackendEventController;
-use App\Http\Controllers\Backend\DepartmentController as BackendDepartmentController;
 use App\Http\Controllers\Backend\DownloadController as BackendDownloadController;
 use App\Http\Controllers\Backend\SystemInformationController as BackendSystemInformationController;
 use App\Http\Controllers\Backend\InformationController as BackendInformationController;
@@ -28,8 +27,6 @@ Route::get('/', [FrontendIndexController::class, 'index'])->name('home');
 Route::get('/board-members', [FrontendIndexController::class, 'boardMembers'])->name('board.member');
 
 Route::get('/teachers', [FrontendIndexController::class, 'teacherIndex'])->name('teachers');
-
-Route::get('/departments', [FrontendIndexController::class, 'departmentIndex'])->name('departments');
 
 Route::get('/downloads', [FrontendIndexController::class, 'downloadIndex'])->name('downloads');
 Route::get('/downloads/{id}', [FrontendIndexController::class, 'downloadFileIndex'])->name('downloadFileFrontend');
@@ -149,16 +146,6 @@ Route::prefix("admin")->middleware(['auth', 'verified'])->group(function () {
         Route::get('edit/{event}', 'edit')->name('Edit');
         Route::post('update/{event}', 'update')->name('Update');
         Route::delete('delete/{event}', 'destroy')->name('Destroy');
-    });
-
-    // department-section
-    Route::controller(BackendDepartmentController::class)->prefix('department')->name('department')->group(function () {
-        Route::get('/', 'index')->name('Index');
-        Route::get('create', 'create')->name('Create');
-        Route::post('store', 'store')->name('Store');
-        Route::get('edit/{department}', 'edit')->name('Edit');
-        Route::post('update/{department}', 'update')->name('Update');
-        Route::delete('delete/{department}', 'destroy')->name('Destroy');
     });
 
     // download-section

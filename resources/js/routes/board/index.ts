@@ -1,7 +1,7 @@
 import { queryParams, type RouteQueryOptions, type RouteDefinition, type RouteFormDefinition } from './../../wayfinder'
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::member
- * @see app/Http/Controllers/Frontend/IndexController.php:99
+ * @see app/Http/Controllers/Frontend/IndexController.php:98
  * @route '/board-members'
  */
 export const member = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -16,7 +16,7 @@ member.definition = {
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::member
- * @see app/Http/Controllers/Frontend/IndexController.php:99
+ * @see app/Http/Controllers/Frontend/IndexController.php:98
  * @route '/board-members'
  */
 member.url = (options?: RouteQueryOptions) => {
@@ -25,7 +25,7 @@ member.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::member
- * @see app/Http/Controllers/Frontend/IndexController.php:99
+ * @see app/Http/Controllers/Frontend/IndexController.php:98
  * @route '/board-members'
  */
 member.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -34,7 +34,7 @@ member.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 })
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::member
- * @see app/Http/Controllers/Frontend/IndexController.php:99
+ * @see app/Http/Controllers/Frontend/IndexController.php:98
  * @route '/board-members'
  */
 member.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -44,7 +44,7 @@ member.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
     /**
 * @see \App\Http\Controllers\Frontend\IndexController::member
- * @see app/Http/Controllers/Frontend/IndexController.php:99
+ * @see app/Http/Controllers/Frontend/IndexController.php:98
  * @route '/board-members'
  */
     const memberForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -54,7 +54,7 @@ member.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::member
- * @see app/Http/Controllers/Frontend/IndexController.php:99
+ * @see app/Http/Controllers/Frontend/IndexController.php:98
  * @route '/board-members'
  */
         memberForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -63,7 +63,7 @@ member.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
         })
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::member
- * @see app/Http/Controllers/Frontend/IndexController.php:99
+ * @see app/Http/Controllers/Frontend/IndexController.php:98
  * @route '/board-members'
  */
         memberForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({

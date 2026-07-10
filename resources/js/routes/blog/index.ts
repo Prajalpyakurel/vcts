@@ -1,7 +1,7 @@
 import { queryParams, type RouteQueryOptions, type RouteDefinition, type RouteFormDefinition, applyUrlDefaults } from './../../wayfinder'
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::show
- * @see app/Http/Controllers/Frontend/IndexController.php:402
+ * @see app/Http/Controllers/Frontend/IndexController.php:384
  * @route '/blog/{slug}'
  */
 export const show = (args: { slug: string | number } | [slug: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -16,7 +16,7 @@ show.definition = {
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::show
- * @see app/Http/Controllers/Frontend/IndexController.php:402
+ * @see app/Http/Controllers/Frontend/IndexController.php:384
  * @route '/blog/{slug}'
  */
 show.url = (args: { slug: string | number } | [slug: string | number ] | string | number, options?: RouteQueryOptions) => {
@@ -44,7 +44,7 @@ show.url = (args: { slug: string | number } | [slug: string | number ] | string 
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::show
- * @see app/Http/Controllers/Frontend/IndexController.php:402
+ * @see app/Http/Controllers/Frontend/IndexController.php:384
  * @route '/blog/{slug}'
  */
 show.get = (args: { slug: string | number } | [slug: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -53,7 +53,7 @@ show.get = (args: { slug: string | number } | [slug: string | number ] | string 
 })
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::show
- * @see app/Http/Controllers/Frontend/IndexController.php:402
+ * @see app/Http/Controllers/Frontend/IndexController.php:384
  * @route '/blog/{slug}'
  */
 show.head = (args: { slug: string | number } | [slug: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -63,7 +63,7 @@ show.head = (args: { slug: string | number } | [slug: string | number ] | string
 
     /**
 * @see \App\Http\Controllers\Frontend\IndexController::show
- * @see app/Http/Controllers/Frontend/IndexController.php:402
+ * @see app/Http/Controllers/Frontend/IndexController.php:384
  * @route '/blog/{slug}'
  */
     const showForm = (args: { slug: string | number } | [slug: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -73,7 +73,7 @@ show.head = (args: { slug: string | number } | [slug: string | number ] | string
 
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::show
- * @see app/Http/Controllers/Frontend/IndexController.php:402
+ * @see app/Http/Controllers/Frontend/IndexController.php:384
  * @route '/blog/{slug}'
  */
         showForm.get = (args: { slug: string | number } | [slug: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -82,7 +82,7 @@ show.head = (args: { slug: string | number } | [slug: string | number ] | string
         })
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::show
- * @see app/Http/Controllers/Frontend/IndexController.php:402
+ * @see app/Http/Controllers/Frontend/IndexController.php:384
  * @route '/blog/{slug}'
  */
         showForm.head = (args: { slug: string | number } | [slug: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({

@@ -212,7 +212,7 @@ register.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
     register.form = registerForm
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::home
- * @see app/Http/Controllers/Frontend/IndexController.php:34
+ * @see app/Http/Controllers/Frontend/IndexController.php:33
  * @route '/'
  */
 export const home = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -227,7 +227,7 @@ home.definition = {
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::home
- * @see app/Http/Controllers/Frontend/IndexController.php:34
+ * @see app/Http/Controllers/Frontend/IndexController.php:33
  * @route '/'
  */
 home.url = (options?: RouteQueryOptions) => {
@@ -236,7 +236,7 @@ home.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::home
- * @see app/Http/Controllers/Frontend/IndexController.php:34
+ * @see app/Http/Controllers/Frontend/IndexController.php:33
  * @route '/'
  */
 home.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -245,7 +245,7 @@ home.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 })
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::home
- * @see app/Http/Controllers/Frontend/IndexController.php:34
+ * @see app/Http/Controllers/Frontend/IndexController.php:33
  * @route '/'
  */
 home.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -255,7 +255,7 @@ home.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
     /**
 * @see \App\Http\Controllers\Frontend\IndexController::home
- * @see app/Http/Controllers/Frontend/IndexController.php:34
+ * @see app/Http/Controllers/Frontend/IndexController.php:33
  * @route '/'
  */
     const homeForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -265,7 +265,7 @@ home.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::home
- * @see app/Http/Controllers/Frontend/IndexController.php:34
+ * @see app/Http/Controllers/Frontend/IndexController.php:33
  * @route '/'
  */
         homeForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -274,7 +274,7 @@ home.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
         })
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::home
- * @see app/Http/Controllers/Frontend/IndexController.php:34
+ * @see app/Http/Controllers/Frontend/IndexController.php:33
  * @route '/'
  */
         homeForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -290,7 +290,7 @@ home.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
     home.form = homeForm
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::teachers
- * @see app/Http/Controllers/Frontend/IndexController.php:110
+ * @see app/Http/Controllers/Frontend/IndexController.php:109
  * @route '/teachers'
  */
 export const teachers = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -305,7 +305,7 @@ teachers.definition = {
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::teachers
- * @see app/Http/Controllers/Frontend/IndexController.php:110
+ * @see app/Http/Controllers/Frontend/IndexController.php:109
  * @route '/teachers'
  */
 teachers.url = (options?: RouteQueryOptions) => {
@@ -314,7 +314,7 @@ teachers.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::teachers
- * @see app/Http/Controllers/Frontend/IndexController.php:110
+ * @see app/Http/Controllers/Frontend/IndexController.php:109
  * @route '/teachers'
  */
 teachers.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -323,7 +323,7 @@ teachers.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 })
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::teachers
- * @see app/Http/Controllers/Frontend/IndexController.php:110
+ * @see app/Http/Controllers/Frontend/IndexController.php:109
  * @route '/teachers'
  */
 teachers.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -333,7 +333,7 @@ teachers.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
     /**
 * @see \App\Http\Controllers\Frontend\IndexController::teachers
- * @see app/Http/Controllers/Frontend/IndexController.php:110
+ * @see app/Http/Controllers/Frontend/IndexController.php:109
  * @route '/teachers'
  */
     const teachersForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -343,7 +343,7 @@ teachers.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::teachers
- * @see app/Http/Controllers/Frontend/IndexController.php:110
+ * @see app/Http/Controllers/Frontend/IndexController.php:109
  * @route '/teachers'
  */
         teachersForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -352,7 +352,7 @@ teachers.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
         })
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::teachers
- * @see app/Http/Controllers/Frontend/IndexController.php:110
+ * @see app/Http/Controllers/Frontend/IndexController.php:109
  * @route '/teachers'
  */
         teachersForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -367,86 +367,8 @@ teachers.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
     
     teachers.form = teachersForm
 /**
-* @see \App\Http\Controllers\Frontend\IndexController::departments
- * @see app/Http/Controllers/Frontend/IndexController.php:154
- * @route '/departments'
- */
-export const departments = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
-    url: departments.url(options),
-    method: 'get',
-})
-
-departments.definition = {
-    methods: ["get","head"],
-    url: '/departments',
-} satisfies RouteDefinition<["get","head"]>
-
-/**
-* @see \App\Http\Controllers\Frontend\IndexController::departments
- * @see app/Http/Controllers/Frontend/IndexController.php:154
- * @route '/departments'
- */
-departments.url = (options?: RouteQueryOptions) => {
-    return departments.definition.url + queryParams(options)
-}
-
-/**
-* @see \App\Http\Controllers\Frontend\IndexController::departments
- * @see app/Http/Controllers/Frontend/IndexController.php:154
- * @route '/departments'
- */
-departments.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
-    url: departments.url(options),
-    method: 'get',
-})
-/**
-* @see \App\Http\Controllers\Frontend\IndexController::departments
- * @see app/Http/Controllers/Frontend/IndexController.php:154
- * @route '/departments'
- */
-departments.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
-    url: departments.url(options),
-    method: 'head',
-})
-
-    /**
-* @see \App\Http\Controllers\Frontend\IndexController::departments
- * @see app/Http/Controllers/Frontend/IndexController.php:154
- * @route '/departments'
- */
-    const departmentsForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
-        action: departments.url(options),
-        method: 'get',
-    })
-
-            /**
-* @see \App\Http\Controllers\Frontend\IndexController::departments
- * @see app/Http/Controllers/Frontend/IndexController.php:154
- * @route '/departments'
- */
-        departmentsForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
-            action: departments.url(options),
-            method: 'get',
-        })
-            /**
-* @see \App\Http\Controllers\Frontend\IndexController::departments
- * @see app/Http/Controllers/Frontend/IndexController.php:154
- * @route '/departments'
- */
-        departmentsForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
-            action: departments.url({
-                        [options?.mergeQuery ? 'mergeQuery' : 'query']: {
-                            _method: 'HEAD',
-                            ...(options?.query ?? options?.mergeQuery ?? {}),
-                        }
-                    }),
-            method: 'get',
-        })
-    
-    departments.form = departmentsForm
-/**
 * @see \App\Http\Controllers\Frontend\IndexController::downloads
- * @see app/Http/Controllers/Frontend/IndexController.php:174
+ * @see app/Http/Controllers/Frontend/IndexController.php:156
  * @route '/downloads'
  */
 export const downloads = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -461,7 +383,7 @@ downloads.definition = {
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::downloads
- * @see app/Http/Controllers/Frontend/IndexController.php:174
+ * @see app/Http/Controllers/Frontend/IndexController.php:156
  * @route '/downloads'
  */
 downloads.url = (options?: RouteQueryOptions) => {
@@ -470,7 +392,7 @@ downloads.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::downloads
- * @see app/Http/Controllers/Frontend/IndexController.php:174
+ * @see app/Http/Controllers/Frontend/IndexController.php:156
  * @route '/downloads'
  */
 downloads.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -479,7 +401,7 @@ downloads.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 })
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::downloads
- * @see app/Http/Controllers/Frontend/IndexController.php:174
+ * @see app/Http/Controllers/Frontend/IndexController.php:156
  * @route '/downloads'
  */
 downloads.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -489,7 +411,7 @@ downloads.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
     /**
 * @see \App\Http\Controllers\Frontend\IndexController::downloads
- * @see app/Http/Controllers/Frontend/IndexController.php:174
+ * @see app/Http/Controllers/Frontend/IndexController.php:156
  * @route '/downloads'
  */
     const downloadsForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -499,7 +421,7 @@ downloads.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::downloads
- * @see app/Http/Controllers/Frontend/IndexController.php:174
+ * @see app/Http/Controllers/Frontend/IndexController.php:156
  * @route '/downloads'
  */
         downloadsForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -508,7 +430,7 @@ downloads.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
         })
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::downloads
- * @see app/Http/Controllers/Frontend/IndexController.php:174
+ * @see app/Http/Controllers/Frontend/IndexController.php:156
  * @route '/downloads'
  */
         downloadsForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -524,7 +446,7 @@ downloads.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
     downloads.form = downloadsForm
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::downloadFileFrontend
- * @see app/Http/Controllers/Frontend/IndexController.php:186
+ * @see app/Http/Controllers/Frontend/IndexController.php:168
  * @route '/downloads/{id}'
  */
 export const downloadFileFrontend = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -539,7 +461,7 @@ downloadFileFrontend.definition = {
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::downloadFileFrontend
- * @see app/Http/Controllers/Frontend/IndexController.php:186
+ * @see app/Http/Controllers/Frontend/IndexController.php:168
  * @route '/downloads/{id}'
  */
 downloadFileFrontend.url = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions) => {
@@ -567,7 +489,7 @@ downloadFileFrontend.url = (args: { id: string | number } | [id: string | number
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::downloadFileFrontend
- * @see app/Http/Controllers/Frontend/IndexController.php:186
+ * @see app/Http/Controllers/Frontend/IndexController.php:168
  * @route '/downloads/{id}'
  */
 downloadFileFrontend.get = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -576,7 +498,7 @@ downloadFileFrontend.get = (args: { id: string | number } | [id: string | number
 })
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::downloadFileFrontend
- * @see app/Http/Controllers/Frontend/IndexController.php:186
+ * @see app/Http/Controllers/Frontend/IndexController.php:168
  * @route '/downloads/{id}'
  */
 downloadFileFrontend.head = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -586,7 +508,7 @@ downloadFileFrontend.head = (args: { id: string | number } | [id: string | numbe
 
     /**
 * @see \App\Http\Controllers\Frontend\IndexController::downloadFileFrontend
- * @see app/Http/Controllers/Frontend/IndexController.php:186
+ * @see app/Http/Controllers/Frontend/IndexController.php:168
  * @route '/downloads/{id}'
  */
     const downloadFileFrontendForm = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -596,7 +518,7 @@ downloadFileFrontend.head = (args: { id: string | number } | [id: string | numbe
 
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::downloadFileFrontend
- * @see app/Http/Controllers/Frontend/IndexController.php:186
+ * @see app/Http/Controllers/Frontend/IndexController.php:168
  * @route '/downloads/{id}'
  */
         downloadFileFrontendForm.get = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -605,7 +527,7 @@ downloadFileFrontend.head = (args: { id: string | number } | [id: string | numbe
         })
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::downloadFileFrontend
- * @see app/Http/Controllers/Frontend/IndexController.php:186
+ * @see app/Http/Controllers/Frontend/IndexController.php:168
  * @route '/downloads/{id}'
  */
         downloadFileFrontendForm.head = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -621,7 +543,7 @@ downloadFileFrontend.head = (args: { id: string | number } | [id: string | numbe
     downloadFileFrontend.form = downloadFileFrontendForm
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::aboutUS
- * @see app/Http/Controllers/Frontend/IndexController.php:213
+ * @see app/Http/Controllers/Frontend/IndexController.php:195
  * @route '/about-us'
  */
 export const aboutUS = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -636,7 +558,7 @@ aboutUS.definition = {
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::aboutUS
- * @see app/Http/Controllers/Frontend/IndexController.php:213
+ * @see app/Http/Controllers/Frontend/IndexController.php:195
  * @route '/about-us'
  */
 aboutUS.url = (options?: RouteQueryOptions) => {
@@ -645,7 +567,7 @@ aboutUS.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::aboutUS
- * @see app/Http/Controllers/Frontend/IndexController.php:213
+ * @see app/Http/Controllers/Frontend/IndexController.php:195
  * @route '/about-us'
  */
 aboutUS.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -654,7 +576,7 @@ aboutUS.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 })
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::aboutUS
- * @see app/Http/Controllers/Frontend/IndexController.php:213
+ * @see app/Http/Controllers/Frontend/IndexController.php:195
  * @route '/about-us'
  */
 aboutUS.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -664,7 +586,7 @@ aboutUS.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
     /**
 * @see \App\Http\Controllers\Frontend\IndexController::aboutUS
- * @see app/Http/Controllers/Frontend/IndexController.php:213
+ * @see app/Http/Controllers/Frontend/IndexController.php:195
  * @route '/about-us'
  */
     const aboutUSForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -674,7 +596,7 @@ aboutUS.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::aboutUS
- * @see app/Http/Controllers/Frontend/IndexController.php:213
+ * @see app/Http/Controllers/Frontend/IndexController.php:195
  * @route '/about-us'
  */
         aboutUSForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -683,7 +605,7 @@ aboutUS.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
         })
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::aboutUS
- * @see app/Http/Controllers/Frontend/IndexController.php:213
+ * @see app/Http/Controllers/Frontend/IndexController.php:195
  * @route '/about-us'
  */
         aboutUSForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -699,7 +621,7 @@ aboutUS.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
     aboutUS.form = aboutUSForm
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::facilities
- * @see app/Http/Controllers/Frontend/IndexController.php:350
+ * @see app/Http/Controllers/Frontend/IndexController.php:332
  * @route '/facilities'
  */
 export const facilities = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -714,7 +636,7 @@ facilities.definition = {
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::facilities
- * @see app/Http/Controllers/Frontend/IndexController.php:350
+ * @see app/Http/Controllers/Frontend/IndexController.php:332
  * @route '/facilities'
  */
 facilities.url = (options?: RouteQueryOptions) => {
@@ -723,7 +645,7 @@ facilities.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::facilities
- * @see app/Http/Controllers/Frontend/IndexController.php:350
+ * @see app/Http/Controllers/Frontend/IndexController.php:332
  * @route '/facilities'
  */
 facilities.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -732,7 +654,7 @@ facilities.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 })
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::facilities
- * @see app/Http/Controllers/Frontend/IndexController.php:350
+ * @see app/Http/Controllers/Frontend/IndexController.php:332
  * @route '/facilities'
  */
 facilities.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -742,7 +664,7 @@ facilities.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
     /**
 * @see \App\Http\Controllers\Frontend\IndexController::facilities
- * @see app/Http/Controllers/Frontend/IndexController.php:350
+ * @see app/Http/Controllers/Frontend/IndexController.php:332
  * @route '/facilities'
  */
     const facilitiesForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -752,7 +674,7 @@ facilities.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::facilities
- * @see app/Http/Controllers/Frontend/IndexController.php:350
+ * @see app/Http/Controllers/Frontend/IndexController.php:332
  * @route '/facilities'
  */
         facilitiesForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -761,7 +683,7 @@ facilities.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
         })
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::facilities
- * @see app/Http/Controllers/Frontend/IndexController.php:350
+ * @see app/Http/Controllers/Frontend/IndexController.php:332
  * @route '/facilities'
  */
         facilitiesForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -777,7 +699,7 @@ facilities.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
     facilities.form = facilitiesForm
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::galleries
- * @see app/Http/Controllers/Frontend/IndexController.php:361
+ * @see app/Http/Controllers/Frontend/IndexController.php:343
  * @route '/galleries'
  */
 export const galleries = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -792,7 +714,7 @@ galleries.definition = {
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::galleries
- * @see app/Http/Controllers/Frontend/IndexController.php:361
+ * @see app/Http/Controllers/Frontend/IndexController.php:343
  * @route '/galleries'
  */
 galleries.url = (options?: RouteQueryOptions) => {
@@ -801,7 +723,7 @@ galleries.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::galleries
- * @see app/Http/Controllers/Frontend/IndexController.php:361
+ * @see app/Http/Controllers/Frontend/IndexController.php:343
  * @route '/galleries'
  */
 galleries.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -810,7 +732,7 @@ galleries.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 })
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::galleries
- * @see app/Http/Controllers/Frontend/IndexController.php:361
+ * @see app/Http/Controllers/Frontend/IndexController.php:343
  * @route '/galleries'
  */
 galleries.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -820,7 +742,7 @@ galleries.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
     /**
 * @see \App\Http\Controllers\Frontend\IndexController::galleries
- * @see app/Http/Controllers/Frontend/IndexController.php:361
+ * @see app/Http/Controllers/Frontend/IndexController.php:343
  * @route '/galleries'
  */
     const galleriesForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -830,7 +752,7 @@ galleries.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::galleries
- * @see app/Http/Controllers/Frontend/IndexController.php:361
+ * @see app/Http/Controllers/Frontend/IndexController.php:343
  * @route '/galleries'
  */
         galleriesForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -839,7 +761,7 @@ galleries.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
         })
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::galleries
- * @see app/Http/Controllers/Frontend/IndexController.php:361
+ * @see app/Http/Controllers/Frontend/IndexController.php:343
  * @route '/galleries'
  */
         galleriesForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -855,7 +777,7 @@ galleries.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
     galleries.form = galleriesForm
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::notices
- * @see app/Http/Controllers/Frontend/IndexController.php:221
+ * @see app/Http/Controllers/Frontend/IndexController.php:203
  * @route '/notices'
  */
 export const notices = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -870,7 +792,7 @@ notices.definition = {
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::notices
- * @see app/Http/Controllers/Frontend/IndexController.php:221
+ * @see app/Http/Controllers/Frontend/IndexController.php:203
  * @route '/notices'
  */
 notices.url = (options?: RouteQueryOptions) => {
@@ -879,7 +801,7 @@ notices.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::notices
- * @see app/Http/Controllers/Frontend/IndexController.php:221
+ * @see app/Http/Controllers/Frontend/IndexController.php:203
  * @route '/notices'
  */
 notices.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -888,7 +810,7 @@ notices.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 })
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::notices
- * @see app/Http/Controllers/Frontend/IndexController.php:221
+ * @see app/Http/Controllers/Frontend/IndexController.php:203
  * @route '/notices'
  */
 notices.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -898,7 +820,7 @@ notices.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
     /**
 * @see \App\Http\Controllers\Frontend\IndexController::notices
- * @see app/Http/Controllers/Frontend/IndexController.php:221
+ * @see app/Http/Controllers/Frontend/IndexController.php:203
  * @route '/notices'
  */
     const noticesForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -908,7 +830,7 @@ notices.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::notices
- * @see app/Http/Controllers/Frontend/IndexController.php:221
+ * @see app/Http/Controllers/Frontend/IndexController.php:203
  * @route '/notices'
  */
         noticesForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -917,7 +839,7 @@ notices.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
         })
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::notices
- * @see app/Http/Controllers/Frontend/IndexController.php:221
+ * @see app/Http/Controllers/Frontend/IndexController.php:203
  * @route '/notices'
  */
         noticesForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -933,7 +855,7 @@ notices.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
     notices.form = noticesForm
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::events
- * @see app/Http/Controllers/Frontend/IndexController.php:249
+ * @see app/Http/Controllers/Frontend/IndexController.php:231
  * @route '/events'
  */
 export const events = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -948,7 +870,7 @@ events.definition = {
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::events
- * @see app/Http/Controllers/Frontend/IndexController.php:249
+ * @see app/Http/Controllers/Frontend/IndexController.php:231
  * @route '/events'
  */
 events.url = (options?: RouteQueryOptions) => {
@@ -957,7 +879,7 @@ events.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::events
- * @see app/Http/Controllers/Frontend/IndexController.php:249
+ * @see app/Http/Controllers/Frontend/IndexController.php:231
  * @route '/events'
  */
 events.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -966,7 +888,7 @@ events.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 })
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::events
- * @see app/Http/Controllers/Frontend/IndexController.php:249
+ * @see app/Http/Controllers/Frontend/IndexController.php:231
  * @route '/events'
  */
 events.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -976,7 +898,7 @@ events.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
     /**
 * @see \App\Http\Controllers\Frontend\IndexController::events
- * @see app/Http/Controllers/Frontend/IndexController.php:249
+ * @see app/Http/Controllers/Frontend/IndexController.php:231
  * @route '/events'
  */
     const eventsForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -986,7 +908,7 @@ events.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::events
- * @see app/Http/Controllers/Frontend/IndexController.php:249
+ * @see app/Http/Controllers/Frontend/IndexController.php:231
  * @route '/events'
  */
         eventsForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -995,7 +917,7 @@ events.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
         })
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::events
- * @see app/Http/Controllers/Frontend/IndexController.php:249
+ * @see app/Http/Controllers/Frontend/IndexController.php:231
  * @route '/events'
  */
         eventsForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1011,7 +933,7 @@ events.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
     events.form = eventsForm
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::activities
- * @see app/Http/Controllers/Frontend/IndexController.php:276
+ * @see app/Http/Controllers/Frontend/IndexController.php:258
  * @route '/activities'
  */
 export const activities = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -1026,7 +948,7 @@ activities.definition = {
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::activities
- * @see app/Http/Controllers/Frontend/IndexController.php:276
+ * @see app/Http/Controllers/Frontend/IndexController.php:258
  * @route '/activities'
  */
 activities.url = (options?: RouteQueryOptions) => {
@@ -1035,7 +957,7 @@ activities.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::activities
- * @see app/Http/Controllers/Frontend/IndexController.php:276
+ * @see app/Http/Controllers/Frontend/IndexController.php:258
  * @route '/activities'
  */
 activities.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -1044,7 +966,7 @@ activities.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 })
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::activities
- * @see app/Http/Controllers/Frontend/IndexController.php:276
+ * @see app/Http/Controllers/Frontend/IndexController.php:258
  * @route '/activities'
  */
 activities.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -1054,7 +976,7 @@ activities.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
     /**
 * @see \App\Http\Controllers\Frontend\IndexController::activities
- * @see app/Http/Controllers/Frontend/IndexController.php:276
+ * @see app/Http/Controllers/Frontend/IndexController.php:258
  * @route '/activities'
  */
     const activitiesForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1064,7 +986,7 @@ activities.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::activities
- * @see app/Http/Controllers/Frontend/IndexController.php:276
+ * @see app/Http/Controllers/Frontend/IndexController.php:258
  * @route '/activities'
  */
         activitiesForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1073,7 +995,7 @@ activities.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
         })
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::activities
- * @see app/Http/Controllers/Frontend/IndexController.php:276
+ * @see app/Http/Controllers/Frontend/IndexController.php:258
  * @route '/activities'
  */
         activitiesForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1089,7 +1011,7 @@ activities.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
     activities.form = activitiesForm
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::blogs
- * @see app/Http/Controllers/Frontend/IndexController.php:373
+ * @see app/Http/Controllers/Frontend/IndexController.php:355
  * @route '/blogs'
  */
 export const blogs = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -1104,7 +1026,7 @@ blogs.definition = {
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::blogs
- * @see app/Http/Controllers/Frontend/IndexController.php:373
+ * @see app/Http/Controllers/Frontend/IndexController.php:355
  * @route '/blogs'
  */
 blogs.url = (options?: RouteQueryOptions) => {
@@ -1113,7 +1035,7 @@ blogs.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::blogs
- * @see app/Http/Controllers/Frontend/IndexController.php:373
+ * @see app/Http/Controllers/Frontend/IndexController.php:355
  * @route '/blogs'
  */
 blogs.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -1122,7 +1044,7 @@ blogs.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 })
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::blogs
- * @see app/Http/Controllers/Frontend/IndexController.php:373
+ * @see app/Http/Controllers/Frontend/IndexController.php:355
  * @route '/blogs'
  */
 blogs.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -1132,7 +1054,7 @@ blogs.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
     /**
 * @see \App\Http\Controllers\Frontend\IndexController::blogs
- * @see app/Http/Controllers/Frontend/IndexController.php:373
+ * @see app/Http/Controllers/Frontend/IndexController.php:355
  * @route '/blogs'
  */
     const blogsForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1142,7 +1064,7 @@ blogs.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::blogs
- * @see app/Http/Controllers/Frontend/IndexController.php:373
+ * @see app/Http/Controllers/Frontend/IndexController.php:355
  * @route '/blogs'
  */
         blogsForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1151,7 +1073,7 @@ blogs.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
         })
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::blogs
- * @see app/Http/Controllers/Frontend/IndexController.php:373
+ * @see app/Http/Controllers/Frontend/IndexController.php:355
  * @route '/blogs'
  */
         blogsForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1167,7 +1089,7 @@ blogs.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
     blogs.form = blogsForm
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::news
- * @see app/Http/Controllers/Frontend/IndexController.php:416
+ * @see app/Http/Controllers/Frontend/IndexController.php:398
  * @route '/news'
  */
 export const news = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -1182,7 +1104,7 @@ news.definition = {
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::news
- * @see app/Http/Controllers/Frontend/IndexController.php:416
+ * @see app/Http/Controllers/Frontend/IndexController.php:398
  * @route '/news'
  */
 news.url = (options?: RouteQueryOptions) => {
@@ -1191,7 +1113,7 @@ news.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::news
- * @see app/Http/Controllers/Frontend/IndexController.php:416
+ * @see app/Http/Controllers/Frontend/IndexController.php:398
  * @route '/news'
  */
 news.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -1200,7 +1122,7 @@ news.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 })
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::news
- * @see app/Http/Controllers/Frontend/IndexController.php:416
+ * @see app/Http/Controllers/Frontend/IndexController.php:398
  * @route '/news'
  */
 news.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -1210,7 +1132,7 @@ news.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
     /**
 * @see \App\Http\Controllers\Frontend\IndexController::news
- * @see app/Http/Controllers/Frontend/IndexController.php:416
+ * @see app/Http/Controllers/Frontend/IndexController.php:398
  * @route '/news'
  */
     const newsForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1220,7 +1142,7 @@ news.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::news
- * @see app/Http/Controllers/Frontend/IndexController.php:416
+ * @see app/Http/Controllers/Frontend/IndexController.php:398
  * @route '/news'
  */
         newsForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1229,7 +1151,7 @@ news.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
         })
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::news
- * @see app/Http/Controllers/Frontend/IndexController.php:416
+ * @see app/Http/Controllers/Frontend/IndexController.php:398
  * @route '/news'
  */
         newsForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1245,7 +1167,7 @@ news.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
     news.form = newsForm
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::contacts
- * @see app/Http/Controllers/Frontend/IndexController.php:319
+ * @see app/Http/Controllers/Frontend/IndexController.php:301
  * @route '/contacts'
  */
 export const contacts = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -1260,7 +1182,7 @@ contacts.definition = {
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::contacts
- * @see app/Http/Controllers/Frontend/IndexController.php:319
+ * @see app/Http/Controllers/Frontend/IndexController.php:301
  * @route '/contacts'
  */
 contacts.url = (options?: RouteQueryOptions) => {
@@ -1269,7 +1191,7 @@ contacts.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::contacts
- * @see app/Http/Controllers/Frontend/IndexController.php:319
+ * @see app/Http/Controllers/Frontend/IndexController.php:301
  * @route '/contacts'
  */
 contacts.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -1278,7 +1200,7 @@ contacts.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 })
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::contacts
- * @see app/Http/Controllers/Frontend/IndexController.php:319
+ * @see app/Http/Controllers/Frontend/IndexController.php:301
  * @route '/contacts'
  */
 contacts.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -1288,7 +1210,7 @@ contacts.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
     /**
 * @see \App\Http\Controllers\Frontend\IndexController::contacts
- * @see app/Http/Controllers/Frontend/IndexController.php:319
+ * @see app/Http/Controllers/Frontend/IndexController.php:301
  * @route '/contacts'
  */
     const contactsForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1298,7 +1220,7 @@ contacts.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::contacts
- * @see app/Http/Controllers/Frontend/IndexController.php:319
+ * @see app/Http/Controllers/Frontend/IndexController.php:301
  * @route '/contacts'
  */
         contactsForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1307,7 +1229,7 @@ contacts.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
         })
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::contacts
- * @see app/Http/Controllers/Frontend/IndexController.php:319
+ * @see app/Http/Controllers/Frontend/IndexController.php:301
  * @route '/contacts'
  */
         contactsForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1323,7 +1245,7 @@ contacts.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
     contacts.form = contactsForm
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::contactStoreFrontend
- * @see app/Http/Controllers/Frontend/IndexController.php:328
+ * @see app/Http/Controllers/Frontend/IndexController.php:310
  * @route '/contacts'
  */
 export const contactStoreFrontend = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -1338,7 +1260,7 @@ contactStoreFrontend.definition = {
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::contactStoreFrontend
- * @see app/Http/Controllers/Frontend/IndexController.php:328
+ * @see app/Http/Controllers/Frontend/IndexController.php:310
  * @route '/contacts'
  */
 contactStoreFrontend.url = (options?: RouteQueryOptions) => {
@@ -1347,7 +1269,7 @@ contactStoreFrontend.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::contactStoreFrontend
- * @see app/Http/Controllers/Frontend/IndexController.php:328
+ * @see app/Http/Controllers/Frontend/IndexController.php:310
  * @route '/contacts'
  */
 contactStoreFrontend.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -1357,7 +1279,7 @@ contactStoreFrontend.post = (options?: RouteQueryOptions): RouteDefinition<'post
 
     /**
 * @see \App\Http\Controllers\Frontend\IndexController::contactStoreFrontend
- * @see app/Http/Controllers/Frontend/IndexController.php:328
+ * @see app/Http/Controllers/Frontend/IndexController.php:310
  * @route '/contacts'
  */
     const contactStoreFrontendForm = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -1367,7 +1289,7 @@ contactStoreFrontend.post = (options?: RouteQueryOptions): RouteDefinition<'post
 
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::contactStoreFrontend
- * @see app/Http/Controllers/Frontend/IndexController.php:328
+ * @see app/Http/Controllers/Frontend/IndexController.php:310
  * @route '/contacts'
  */
         contactStoreFrontendForm.post = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -1378,7 +1300,7 @@ contactStoreFrontend.post = (options?: RouteQueryOptions): RouteDefinition<'post
     contactStoreFrontend.form = contactStoreFrontendForm
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::programShow
- * @see app/Http/Controllers/Frontend/IndexController.php:137
+ * @see app/Http/Controllers/Frontend/IndexController.php:136
  * @route '/programs/{program_name}'
  */
 export const programShow = (args: { program_name: string | number } | [program_name: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -1393,7 +1315,7 @@ programShow.definition = {
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::programShow
- * @see app/Http/Controllers/Frontend/IndexController.php:137
+ * @see app/Http/Controllers/Frontend/IndexController.php:136
  * @route '/programs/{program_name}'
  */
 programShow.url = (args: { program_name: string | number } | [program_name: string | number ] | string | number, options?: RouteQueryOptions) => {
@@ -1421,7 +1343,7 @@ programShow.url = (args: { program_name: string | number } | [program_name: stri
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::programShow
- * @see app/Http/Controllers/Frontend/IndexController.php:137
+ * @see app/Http/Controllers/Frontend/IndexController.php:136
  * @route '/programs/{program_name}'
  */
 programShow.get = (args: { program_name: string | number } | [program_name: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -1430,7 +1352,7 @@ programShow.get = (args: { program_name: string | number } | [program_name: stri
 })
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::programShow
- * @see app/Http/Controllers/Frontend/IndexController.php:137
+ * @see app/Http/Controllers/Frontend/IndexController.php:136
  * @route '/programs/{program_name}'
  */
 programShow.head = (args: { program_name: string | number } | [program_name: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -1440,7 +1362,7 @@ programShow.head = (args: { program_name: string | number } | [program_name: str
 
     /**
 * @see \App\Http\Controllers\Frontend\IndexController::programShow
- * @see app/Http/Controllers/Frontend/IndexController.php:137
+ * @see app/Http/Controllers/Frontend/IndexController.php:136
  * @route '/programs/{program_name}'
  */
     const programShowForm = (args: { program_name: string | number } | [program_name: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1450,7 +1372,7 @@ programShow.head = (args: { program_name: string | number } | [program_name: str
 
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::programShow
- * @see app/Http/Controllers/Frontend/IndexController.php:137
+ * @see app/Http/Controllers/Frontend/IndexController.php:136
  * @route '/programs/{program_name}'
  */
         programShowForm.get = (args: { program_name: string | number } | [program_name: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1459,7 +1381,7 @@ programShow.head = (args: { program_name: string | number } | [program_name: str
         })
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::programShow
- * @see app/Http/Controllers/Frontend/IndexController.php:137
+ * @see app/Http/Controllers/Frontend/IndexController.php:136
  * @route '/programs/{program_name}'
  */
         programShowForm.head = (args: { program_name: string | number } | [program_name: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1475,7 +1397,7 @@ programShow.head = (args: { program_name: string | number } | [program_name: str
     programShow.form = programShowForm
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::programIndex
- * @see app/Http/Controllers/Frontend/IndexController.php:120
+ * @see app/Http/Controllers/Frontend/IndexController.php:119
  * @route '/programs'
  */
 export const programIndex = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -1490,7 +1412,7 @@ programIndex.definition = {
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::programIndex
- * @see app/Http/Controllers/Frontend/IndexController.php:120
+ * @see app/Http/Controllers/Frontend/IndexController.php:119
  * @route '/programs'
  */
 programIndex.url = (options?: RouteQueryOptions) => {
@@ -1499,7 +1421,7 @@ programIndex.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::programIndex
- * @see app/Http/Controllers/Frontend/IndexController.php:120
+ * @see app/Http/Controllers/Frontend/IndexController.php:119
  * @route '/programs'
  */
 programIndex.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -1508,7 +1430,7 @@ programIndex.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 })
 /**
 * @see \App\Http\Controllers\Frontend\IndexController::programIndex
- * @see app/Http/Controllers/Frontend/IndexController.php:120
+ * @see app/Http/Controllers/Frontend/IndexController.php:119
  * @route '/programs'
  */
 programIndex.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -1518,7 +1440,7 @@ programIndex.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
     /**
 * @see \App\Http\Controllers\Frontend\IndexController::programIndex
- * @see app/Http/Controllers/Frontend/IndexController.php:120
+ * @see app/Http/Controllers/Frontend/IndexController.php:119
  * @route '/programs'
  */
     const programIndexForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1528,7 +1450,7 @@ programIndex.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::programIndex
- * @see app/Http/Controllers/Frontend/IndexController.php:120
+ * @see app/Http/Controllers/Frontend/IndexController.php:119
  * @route '/programs'
  */
         programIndexForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1537,7 +1459,7 @@ programIndex.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
         })
             /**
 * @see \App\Http\Controllers\Frontend\IndexController::programIndex
- * @see app/Http/Controllers/Frontend/IndexController.php:120
+ * @see app/Http/Controllers/Frontend/IndexController.php:119
  * @route '/programs'
  */
         programIndexForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -5720,487 +5642,6 @@ eventDestroy.delete = (args: { event: number | { id: number } } | [event: number
         })
     
     eventDestroy.form = eventDestroyForm
-/**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentIndex
- * @see app/Http/Controllers/Backend/DepartmentController.php:22
- * @route '/admin/department'
- */
-export const departmentIndex = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
-    url: departmentIndex.url(options),
-    method: 'get',
-})
-
-departmentIndex.definition = {
-    methods: ["get","head"],
-    url: '/admin/department',
-} satisfies RouteDefinition<["get","head"]>
-
-/**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentIndex
- * @see app/Http/Controllers/Backend/DepartmentController.php:22
- * @route '/admin/department'
- */
-departmentIndex.url = (options?: RouteQueryOptions) => {
-    return departmentIndex.definition.url + queryParams(options)
-}
-
-/**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentIndex
- * @see app/Http/Controllers/Backend/DepartmentController.php:22
- * @route '/admin/department'
- */
-departmentIndex.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
-    url: departmentIndex.url(options),
-    method: 'get',
-})
-/**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentIndex
- * @see app/Http/Controllers/Backend/DepartmentController.php:22
- * @route '/admin/department'
- */
-departmentIndex.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
-    url: departmentIndex.url(options),
-    method: 'head',
-})
-
-    /**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentIndex
- * @see app/Http/Controllers/Backend/DepartmentController.php:22
- * @route '/admin/department'
- */
-    const departmentIndexForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
-        action: departmentIndex.url(options),
-        method: 'get',
-    })
-
-            /**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentIndex
- * @see app/Http/Controllers/Backend/DepartmentController.php:22
- * @route '/admin/department'
- */
-        departmentIndexForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
-            action: departmentIndex.url(options),
-            method: 'get',
-        })
-            /**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentIndex
- * @see app/Http/Controllers/Backend/DepartmentController.php:22
- * @route '/admin/department'
- */
-        departmentIndexForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
-            action: departmentIndex.url({
-                        [options?.mergeQuery ? 'mergeQuery' : 'query']: {
-                            _method: 'HEAD',
-                            ...(options?.query ?? options?.mergeQuery ?? {}),
-                        }
-                    }),
-            method: 'get',
-        })
-    
-    departmentIndex.form = departmentIndexForm
-/**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentCreate
- * @see app/Http/Controllers/Backend/DepartmentController.php:37
- * @route '/admin/department/create'
- */
-export const departmentCreate = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
-    url: departmentCreate.url(options),
-    method: 'get',
-})
-
-departmentCreate.definition = {
-    methods: ["get","head"],
-    url: '/admin/department/create',
-} satisfies RouteDefinition<["get","head"]>
-
-/**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentCreate
- * @see app/Http/Controllers/Backend/DepartmentController.php:37
- * @route '/admin/department/create'
- */
-departmentCreate.url = (options?: RouteQueryOptions) => {
-    return departmentCreate.definition.url + queryParams(options)
-}
-
-/**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentCreate
- * @see app/Http/Controllers/Backend/DepartmentController.php:37
- * @route '/admin/department/create'
- */
-departmentCreate.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
-    url: departmentCreate.url(options),
-    method: 'get',
-})
-/**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentCreate
- * @see app/Http/Controllers/Backend/DepartmentController.php:37
- * @route '/admin/department/create'
- */
-departmentCreate.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
-    url: departmentCreate.url(options),
-    method: 'head',
-})
-
-    /**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentCreate
- * @see app/Http/Controllers/Backend/DepartmentController.php:37
- * @route '/admin/department/create'
- */
-    const departmentCreateForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
-        action: departmentCreate.url(options),
-        method: 'get',
-    })
-
-            /**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentCreate
- * @see app/Http/Controllers/Backend/DepartmentController.php:37
- * @route '/admin/department/create'
- */
-        departmentCreateForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
-            action: departmentCreate.url(options),
-            method: 'get',
-        })
-            /**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentCreate
- * @see app/Http/Controllers/Backend/DepartmentController.php:37
- * @route '/admin/department/create'
- */
-        departmentCreateForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
-            action: departmentCreate.url({
-                        [options?.mergeQuery ? 'mergeQuery' : 'query']: {
-                            _method: 'HEAD',
-                            ...(options?.query ?? options?.mergeQuery ?? {}),
-                        }
-                    }),
-            method: 'get',
-        })
-    
-    departmentCreate.form = departmentCreateForm
-/**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentStore
- * @see app/Http/Controllers/Backend/DepartmentController.php:47
- * @route '/admin/department/store'
- */
-export const departmentStore = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
-    url: departmentStore.url(options),
-    method: 'post',
-})
-
-departmentStore.definition = {
-    methods: ["post"],
-    url: '/admin/department/store',
-} satisfies RouteDefinition<["post"]>
-
-/**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentStore
- * @see app/Http/Controllers/Backend/DepartmentController.php:47
- * @route '/admin/department/store'
- */
-departmentStore.url = (options?: RouteQueryOptions) => {
-    return departmentStore.definition.url + queryParams(options)
-}
-
-/**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentStore
- * @see app/Http/Controllers/Backend/DepartmentController.php:47
- * @route '/admin/department/store'
- */
-departmentStore.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
-    url: departmentStore.url(options),
-    method: 'post',
-})
-
-    /**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentStore
- * @see app/Http/Controllers/Backend/DepartmentController.php:47
- * @route '/admin/department/store'
- */
-    const departmentStoreForm = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
-        action: departmentStore.url(options),
-        method: 'post',
-    })
-
-            /**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentStore
- * @see app/Http/Controllers/Backend/DepartmentController.php:47
- * @route '/admin/department/store'
- */
-        departmentStoreForm.post = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
-            action: departmentStore.url(options),
-            method: 'post',
-        })
-    
-    departmentStore.form = departmentStoreForm
-/**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentEdit
- * @see app/Http/Controllers/Backend/DepartmentController.php:67
- * @route '/admin/department/edit/{department}'
- */
-export const departmentEdit = (args: { department: number | { id: number } } | [department: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'get'> => ({
-    url: departmentEdit.url(args, options),
-    method: 'get',
-})
-
-departmentEdit.definition = {
-    methods: ["get","head"],
-    url: '/admin/department/edit/{department}',
-} satisfies RouteDefinition<["get","head"]>
-
-/**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentEdit
- * @see app/Http/Controllers/Backend/DepartmentController.php:67
- * @route '/admin/department/edit/{department}'
- */
-departmentEdit.url = (args: { department: number | { id: number } } | [department: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions) => {
-    if (typeof args === 'string' || typeof args === 'number') {
-        args = { department: args }
-    }
-
-            if (typeof args === 'object' && !Array.isArray(args) && 'id' in args) {
-            args = { department: args.id }
-        }
-    
-    if (Array.isArray(args)) {
-        args = {
-                    department: args[0],
-                }
-    }
-
-    args = applyUrlDefaults(args)
-
-    const parsedArgs = {
-                        department: typeof args.department === 'object'
-                ? args.department.id
-                : args.department,
-                }
-
-    return departmentEdit.definition.url
-            .replace('{department}', parsedArgs.department.toString())
-            .replace(/\/+$/, '') + queryParams(options)
-}
-
-/**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentEdit
- * @see app/Http/Controllers/Backend/DepartmentController.php:67
- * @route '/admin/department/edit/{department}'
- */
-departmentEdit.get = (args: { department: number | { id: number } } | [department: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'get'> => ({
-    url: departmentEdit.url(args, options),
-    method: 'get',
-})
-/**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentEdit
- * @see app/Http/Controllers/Backend/DepartmentController.php:67
- * @route '/admin/department/edit/{department}'
- */
-departmentEdit.head = (args: { department: number | { id: number } } | [department: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'head'> => ({
-    url: departmentEdit.url(args, options),
-    method: 'head',
-})
-
-    /**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentEdit
- * @see app/Http/Controllers/Backend/DepartmentController.php:67
- * @route '/admin/department/edit/{department}'
- */
-    const departmentEditForm = (args: { department: number | { id: number } } | [department: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
-        action: departmentEdit.url(args, options),
-        method: 'get',
-    })
-
-            /**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentEdit
- * @see app/Http/Controllers/Backend/DepartmentController.php:67
- * @route '/admin/department/edit/{department}'
- */
-        departmentEditForm.get = (args: { department: number | { id: number } } | [department: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
-            action: departmentEdit.url(args, options),
-            method: 'get',
-        })
-            /**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentEdit
- * @see app/Http/Controllers/Backend/DepartmentController.php:67
- * @route '/admin/department/edit/{department}'
- */
-        departmentEditForm.head = (args: { department: number | { id: number } } | [department: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
-            action: departmentEdit.url(args, {
-                        [options?.mergeQuery ? 'mergeQuery' : 'query']: {
-                            _method: 'HEAD',
-                            ...(options?.query ?? options?.mergeQuery ?? {}),
-                        }
-                    }),
-            method: 'get',
-        })
-    
-    departmentEdit.form = departmentEditForm
-/**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentUpdate
- * @see app/Http/Controllers/Backend/DepartmentController.php:79
- * @route '/admin/department/update/{department}'
- */
-export const departmentUpdate = (args: { department: number | { id: number } } | [department: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'post'> => ({
-    url: departmentUpdate.url(args, options),
-    method: 'post',
-})
-
-departmentUpdate.definition = {
-    methods: ["post"],
-    url: '/admin/department/update/{department}',
-} satisfies RouteDefinition<["post"]>
-
-/**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentUpdate
- * @see app/Http/Controllers/Backend/DepartmentController.php:79
- * @route '/admin/department/update/{department}'
- */
-departmentUpdate.url = (args: { department: number | { id: number } } | [department: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions) => {
-    if (typeof args === 'string' || typeof args === 'number') {
-        args = { department: args }
-    }
-
-            if (typeof args === 'object' && !Array.isArray(args) && 'id' in args) {
-            args = { department: args.id }
-        }
-    
-    if (Array.isArray(args)) {
-        args = {
-                    department: args[0],
-                }
-    }
-
-    args = applyUrlDefaults(args)
-
-    const parsedArgs = {
-                        department: typeof args.department === 'object'
-                ? args.department.id
-                : args.department,
-                }
-
-    return departmentUpdate.definition.url
-            .replace('{department}', parsedArgs.department.toString())
-            .replace(/\/+$/, '') + queryParams(options)
-}
-
-/**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentUpdate
- * @see app/Http/Controllers/Backend/DepartmentController.php:79
- * @route '/admin/department/update/{department}'
- */
-departmentUpdate.post = (args: { department: number | { id: number } } | [department: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'post'> => ({
-    url: departmentUpdate.url(args, options),
-    method: 'post',
-})
-
-    /**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentUpdate
- * @see app/Http/Controllers/Backend/DepartmentController.php:79
- * @route '/admin/department/update/{department}'
- */
-    const departmentUpdateForm = (args: { department: number | { id: number } } | [department: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
-        action: departmentUpdate.url(args, options),
-        method: 'post',
-    })
-
-            /**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentUpdate
- * @see app/Http/Controllers/Backend/DepartmentController.php:79
- * @route '/admin/department/update/{department}'
- */
-        departmentUpdateForm.post = (args: { department: number | { id: number } } | [department: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
-            action: departmentUpdate.url(args, options),
-            method: 'post',
-        })
-    
-    departmentUpdate.form = departmentUpdateForm
-/**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentDestroy
- * @see app/Http/Controllers/Backend/DepartmentController.php:97
- * @route '/admin/department/delete/{department}'
- */
-export const departmentDestroy = (args: { department: number | { id: number } } | [department: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'delete'> => ({
-    url: departmentDestroy.url(args, options),
-    method: 'delete',
-})
-
-departmentDestroy.definition = {
-    methods: ["delete"],
-    url: '/admin/department/delete/{department}',
-} satisfies RouteDefinition<["delete"]>
-
-/**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentDestroy
- * @see app/Http/Controllers/Backend/DepartmentController.php:97
- * @route '/admin/department/delete/{department}'
- */
-departmentDestroy.url = (args: { department: number | { id: number } } | [department: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions) => {
-    if (typeof args === 'string' || typeof args === 'number') {
-        args = { department: args }
-    }
-
-            if (typeof args === 'object' && !Array.isArray(args) && 'id' in args) {
-            args = { department: args.id }
-        }
-    
-    if (Array.isArray(args)) {
-        args = {
-                    department: args[0],
-                }
-    }
-
-    args = applyUrlDefaults(args)
-
-    const parsedArgs = {
-                        department: typeof args.department === 'object'
-                ? args.department.id
-                : args.department,
-                }
-
-    return departmentDestroy.definition.url
-            .replace('{department}', parsedArgs.department.toString())
-            .replace(/\/+$/, '') + queryParams(options)
-}
-
-/**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentDestroy
- * @see app/Http/Controllers/Backend/DepartmentController.php:97
- * @route '/admin/department/delete/{department}'
- */
-departmentDestroy.delete = (args: { department: number | { id: number } } | [department: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'delete'> => ({
-    url: departmentDestroy.url(args, options),
-    method: 'delete',
-})
-
-    /**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentDestroy
- * @see app/Http/Controllers/Backend/DepartmentController.php:97
- * @route '/admin/department/delete/{department}'
- */
-    const departmentDestroyForm = (args: { department: number | { id: number } } | [department: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
-        action: departmentDestroy.url(args, {
-                    [options?.mergeQuery ? 'mergeQuery' : 'query']: {
-                        _method: 'DELETE',
-                        ...(options?.query ?? options?.mergeQuery ?? {}),
-                    }
-                }),
-        method: 'post',
-    })
-
-            /**
-* @see \App\Http\Controllers\Backend\DepartmentController::departmentDestroy
- * @see app/Http/Controllers/Backend/DepartmentController.php:97
- * @route '/admin/department/delete/{department}'
- */
-        departmentDestroyForm.delete = (args: { department: number | { id: number } } | [department: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
-            action: departmentDestroy.url(args, {
-                        [options?.mergeQuery ? 'mergeQuery' : 'query']: {
-                            _method: 'DELETE',
-                            ...(options?.query ?? options?.mergeQuery ?? {}),
-                        }
-                    }),
-            method: 'post',
-        })
-    
-    departmentDestroy.form = departmentDestroyForm
 /**
 * @see \App\Http\Controllers\Backend\DownloadController::downloadIndex
  * @see app/Http/Controllers/Backend/DownloadController.php:24

@@ -7,7 +7,6 @@ use App\Http\Requests\StoreContactRequest;
 use App\Models\BoardMemberMessage;
 use App\Models\Contact;
 use App\Models\Course;
-use App\Models\Department;
 use App\Models\Download;
 use App\Models\Event;
 use App\Models\Faculty;
@@ -151,23 +150,6 @@ class IndexController extends Controller
     /**
      * @return Response
      */
-    public function departmentIndex(): Response
-    {
-        $departments = Department::all()->map(function ($department) {
-            $facultyIds = is_array($department->faculty_id)
-                ? $department->faculty_id
-                : json_decode($department->faculty_id, true);
-
-            $department->faculties = Faculty::query()->whereIn('id', $facultyIds ?? [])->where('status', 'active')->orderBy('order_no')->get();
-
-            return $department;
-        });
-
-        return Inertia::render('frontend/department/index', [
-            'departments' => $departments,
-        ]);
-    }
-
     /**
      * @return Response
      */

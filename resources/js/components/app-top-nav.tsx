@@ -14,7 +14,6 @@ import {
     courseIndex,
     curriculumIndex,
     dashboard,
-    departmentIndex,
     downloadIndex,
     eventIndex,
     facultyIndex,
@@ -28,7 +27,6 @@ import { type BreadcrumbItem, type SharedData } from '@/types';
 import { Link, usePage } from '@inertiajs/react';
 import {
     BookOpen,
-    Building2,
     CalendarDays,
     ChevronDown,
     Download,
@@ -64,7 +62,6 @@ const navGroups = [
         items: [
             { title: 'Courses', href: courseIndex(), icon: BookOpen },
             { title: 'Curriculum', href: curriculumIndex(), icon: SquarePenIcon },
-            { title: 'Departments', href: departmentIndex(), icon: Building2 },
             { title: 'Faculties', href: facultyIndex(), icon: GraduationCap },
         ],
     },

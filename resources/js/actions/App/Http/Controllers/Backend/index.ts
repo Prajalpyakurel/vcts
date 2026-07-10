@@ -8,7 +8,6 @@ import CurriculumSyllabusController from './CurriculumSyllabusController'
 import FacultyController from './FacultyController'
 import BoardMemberMessageController from './BoardMemberMessageController'
 import EventController from './EventController'
-import DepartmentController from './DepartmentController'
 import DownloadController from './DownloadController'
 import InformationController from './InformationController'
 import GalleryController from './GalleryController'
@@ -26,7 +25,6 @@ CurriculumSyllabusController: Object.assign(CurriculumSyllabusController, Curric
 FacultyController: Object.assign(FacultyController, FacultyController),
 BoardMemberMessageController: Object.assign(BoardMemberMessageController, BoardMemberMessageController),
 EventController: Object.assign(EventController, EventController),
-DepartmentController: Object.assign(DepartmentController, DepartmentController),
 DownloadController: Object.assign(DownloadController, DownloadController),
 InformationController: Object.assign(InformationController, InformationController),
 GalleryController: Object.assign(GalleryController, GalleryController),
