@@ -55,7 +55,7 @@ export const downloadColumns: ColumnDef<Download>[] = [
         header: () => <div className="w-[320px] font-medium">Description</div>,
         cell: ({ row }) => {
             const [showMore, setShowMore] = React.useState<boolean>(false);
-            const text: string = row.getValue('description');
+            const text: string = row.getValue('description') ?? '';
 
             return (
                 <div className="w-[320px]">

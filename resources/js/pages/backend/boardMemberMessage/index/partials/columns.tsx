@@ -77,7 +77,7 @@ export const boardMemberMessageColumns: ColumnDef<BoardMemberMessage>[] = [
         header: () => <div className="w-[320px] font-medium">Message</div>,
         cell: ({ row }) => {
             const [showMore, setShowMore] = React.useState<boolean>(false);
-            const text: string = row.getValue('message');
+            const text: string = row.getValue('message') ?? '';
 
             return (
                 <div className="w-[320px]">

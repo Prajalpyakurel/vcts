@@ -28,7 +28,11 @@ export const facultyColumns: ColumnDef<Faculty>[] = [
         cell: ({ row }) => (
             <span className="p-3">
                 <img
-                    src={`/storage/${row.getValue('image')}`}
+                    src={
+                        row.getValue('image')
+                            ? `/storage/${row.getValue('image')}`
+                            : '/assets/images/logo/logo_2.png'
+                    }
                     alt="hero-image"
                     className="h-12 w-12 rounded-full object-cover"
                 />
@@ -80,7 +84,7 @@ export const facultyColumns: ColumnDef<Faculty>[] = [
         header: () => <div className="w-[320px] font-medium">Description</div>,
         cell: ({ row }) => {
             const [showMore, setShowMore] = React.useState<boolean>(false);
-            const text: string = row.getValue('description');
+            const text: string = row.getValue('description') ?? '';
 
             return (
                 <div className="w-[320px]">
@@ -109,7 +113,7 @@ export const facultyColumns: ColumnDef<Faculty>[] = [
         header: () => <div className="w-[320px] font-medium">Message</div>,
         cell: ({ row }) => {
             const [showMore, setShowMore] = React.useState<boolean>(false);
-            const text: string = row.getValue('message');
+            const text: string = row.getValue('message') ?? '';
 
             return (
                 <div className="w-[320px]">

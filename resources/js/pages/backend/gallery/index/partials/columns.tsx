@@ -28,7 +28,11 @@ export const galleryColumns: ColumnDef<Gallery>[] = [
         cell: ({ row }) => (
             <span className="p-3">
                 <img
-                    src={`/storage/${row.getValue('image')}`}
+                    src={
+                        row.getValue('image')
+                            ? `/storage/${row.getValue('image')}`
+                            : '/assets/images/logo/logo_2.png'
+                    }
                     alt="hero-image"
                     className="h-12 w-12 rounded-full object-cover"
                 />
