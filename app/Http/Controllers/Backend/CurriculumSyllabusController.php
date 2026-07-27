@@ -7,6 +7,7 @@ use App\Http\Requests\StoreCurriculumSyllabusRequest;
 use App\Http\Requests\UpdateCurriculumSyllabusRequest;
 use App\Models\CurriculumSyllabus;
 use Exception;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 
 class CurriculumSyllabusController extends Controller
@@ -23,8 +24,7 @@ class CurriculumSyllabusController extends Controller
                 'name' => $data['name'],
             ]);
 
-            return redirect()
-                ->route('curriculumEdit', $data['curricula_id'])
+            return redirect($data['redirect_to'] ?? route('curriculumEdit', $data['curricula_id']))
                 ->with('success', 'Subject added successfully.');
         } catch (Exception $exception) {
             Log::error('Failed to create curriculum syllabus: ' . $exception->getMessage());
@@ -42,8 +42,7 @@ class CurriculumSyllabusController extends Controller
                 'name' => $request->validated('name'),
             ]);
 
-            return redirect()
-                ->route('curriculumEdit', $curriculumSyllabus->curricula_id)
+            return redirect($request->validated('redirect_to') ?? route('curriculumEdit', $curriculumSyllabus->curricula_id))
                 ->with('success', 'Subject updated successfully.');
         } catch (Exception $exception) {
             Log::error('Failed to update curriculum syllabus: ' . $exception->getMessage());
@@ -54,14 +53,13 @@ class CurriculumSyllabusController extends Controller
     /**
      * Remove the specified subject.
      */
-    public function destroy(CurriculumSyllabus $curriculumSyllabus)
+    public function destroy(Request $request, CurriculumSyllabus $curriculumSyllabus)
     {
         try {
             $curriculaId = $curriculumSyllabus->curricula_id;
             $curriculumSyllabus->delete();
 
-            return redirect()
-                ->route('curriculumEdit', $curriculaId)
+            return redirect($request->input('redirect_to') ?? route('curriculumEdit', $curriculaId))
                 ->with('success', 'Subject deleted successfully.');
         } catch (Exception $exception) {
             Log::error('Failed to delete curriculum syllabus: ' . $exception->getMessage());

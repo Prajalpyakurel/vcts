@@ -8,6 +8,7 @@ use App\Http\Requests\UpdateCurriculumRequest;
 use App\Models\Course;
 use App\Models\Curriculum;
 use Exception;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Inertia\Inertia;
 use Inertia\Response;
@@ -51,7 +52,7 @@ class CurriculumController extends Controller
                 'curricula_duration' => $data['curricula_duration'],
             ]);
 
-            return redirect()->route('curriculumIndex')->with('success', 'Curriculum created successfully.');
+            return redirect($data['redirect_to'] ?? route('curriculumIndex'))->with('success', 'Curriculum created successfully.');
         } catch (Exception $exception) {
             Log::error('Failed to create curriculum section:  ' . $exception->getMessage());
             return redirect()->back()->with('error', 'Curriculum creation failed.');
@@ -84,7 +85,7 @@ class CurriculumController extends Controller
                 'credit_hours' => $data['credit_hours'] ?? '—',
                 'curricula_duration' => $data['curricula_duration'],
             ]);
-            return redirect()->route('curriculumIndex')->with('success', 'Curriculum updated successfully.');
+            return redirect($data['redirect_to'] ?? route('curriculumIndex'))->with('success', 'Curriculum updated successfully.');
         } catch (Exception $exception) {
             Log::error('Failed to update curriculum:  ' . $exception->getMessage());
             return redirect()->back()->with('error', 'Curriculum update failed.');
@@ -94,11 +95,11 @@ class CurriculumController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Curriculum $curriculum)
+    public function destroy(Request $request, Curriculum $curriculum)
     {
         try {
             $curriculum->delete();
-            return redirect()->route('curriculumIndex')->with('success', 'Curriculum deleted successfully.');
+            return redirect($request->input('redirect_to') ?? route('curriculumIndex'))->with('success', 'Curriculum deleted successfully.');
         } catch (Exception $exception) {
             Log::error('Failed to delete curriculum:  ' . $exception->getMessage());
             return redirect()->back()->with('error', 'Curriculum deletion failed.');

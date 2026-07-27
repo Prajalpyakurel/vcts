@@ -23,6 +23,7 @@ class UpdateCurriculumSyllabusRequest extends FormRequest
     {
         return [
             'name' => 'required|string|max:255',
+            'redirect_to' => 'nullable|string',
         ];
     }
 }

@@ -27,6 +27,7 @@ class StoreCurriculumRequest extends FormRequest
             'name' => 'required',
             'credit_hours' => 'nullable|numeric|min:0',
             'curricula_duration' => 'required|string',
+            'redirect_to' => 'nullable|string',
         ];
     }
 }

@@ -14,7 +14,6 @@ import {
     heroSectionindex,
     studentFeedbackIndex,
     courseIndex,
-    curriculumIndex,
     facultyIndex,
     boardMemberMessageIndex,
     eventIndex,
@@ -36,7 +35,6 @@ import {
     GraduationCap,
     Download,
     Settings,
-    SquarePenIcon,
     GalleryHorizontalIcon,
 } from 'lucide-react';
 import AppLogo from './app-logo';
@@ -64,11 +62,6 @@ const mainNavItems: NavItem[] = [
         title: 'Courses',
         href: courseIndex(),
         icon: BookOpen,
-    },
-    {
-        title: 'Curriculum',
-        href: curriculumIndex(),
-        icon: SquarePenIcon,
     },
     {
         title: 'Student Feedbacks',

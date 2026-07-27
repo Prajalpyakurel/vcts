@@ -19,6 +19,7 @@ import { handleChange } from '@/utils/globalFunctions';
 import { useForm } from '@inertiajs/react';
 import React from 'react';
 import { Course } from '@/pages/backend/course/types';
+import { CurriculumManager } from '@/pages/backend/course/edit/partials/curriculum-manager';
 
 const breadcrumbs: BreadcrumbItem[] = [
     { title: 'Course', href: courseIndex().url },
@@ -227,6 +228,33 @@ export default function Edit({
                             </CardContent>
                         </Card>
                     </form>
+
+                    <Card className="mt-6">
+                        <CardHeader>
+                            <CardTitle>Curriculum &amp; Subjects</CardTitle>
+                            <p className="text-sm text-muted-foreground">
+                                Add each year/semester and its subjects here —
+                                no need to visit a separate page.
+                                {typeof course?.total_credit_hours ===
+                                    'number' && (
+                                    <>
+                                        {' '}
+                                        Total credit hours across all years:{' '}
+                                        <span className="font-semibold text-gray-700">
+                                            {course.total_credit_hours}
+                                        </span>
+                                        .
+                                    </>
+                                )}
+                            </p>
+                        </CardHeader>
+                        <CardContent>
+                            <CurriculumManager
+                                courseId={Number(course.id)}
+                                curricula={course?.course_curriculum ?? []}
+                            />
+                        </CardContent>
+                    </Card>
                 </div>
             </div>
         </AppLayout>

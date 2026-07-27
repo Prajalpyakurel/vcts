@@ -7,6 +7,7 @@ use App\Http\Requests\StoreCourseRequest;
 use App\Http\Requests\UpdateCourseRequest;
 use App\Models\Course;
 use Exception;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 use Inertia\Inertia;
@@ -46,7 +47,7 @@ class CourseController extends Controller
                 $imagePath = $request->file('image')->store('courses', 'public');
             }
 
-            Course::query()->create([
+            $course = Course::query()->create([
                 'image' => $imagePath,
                 'name' => $data['name'],
                 'slug' => $data['course_short_name'],
@@ -56,7 +57,7 @@ class CourseController extends Controller
                 'status' => $data['status'],
             ]);
 
-            return redirect()->route('courseIndex')->with('success', 'Course created successfully.');
+            return redirect()->route('courseEdit', $course->id)->with('success', 'Course created. Now add its curriculum years and subjects below.');
         } catch (Exception $exception) {
             Log::error('Failed to create course section:  ' . $exception->getMessage());
             return redirect()->back()->with('error', 'Course creation failed.');
@@ -68,6 +69,13 @@ class CourseController extends Controller
      */
     public function edit(Course $course)
     {
+        $course->loadSum(
+            ['courseCurriculum as total_credit_hours' => function ($query) {
+                $query->select(DB::raw('SUM(CAST(credit_hours AS SIGNED))'));
+            }],
+            'credit_hours'
+        )->load('courseCurriculum.curriculumSyllabus');
+
         return Inertia::render('backend/course/edit/index', [
             'course' => $course,
         ]);

@@ -1,7 +1,7 @@
 import { queryParams, type RouteQueryOptions, type RouteDefinition, type RouteFormDefinition, applyUrlDefaults } from './../../../../../wayfinder'
 /**
 * @see \App\Http\Controllers\Backend\CurriculumSyllabusController::store
- * @see app/Http/Controllers/Backend/CurriculumSyllabusController.php:17
+ * @see app/Http/Controllers/Backend/CurriculumSyllabusController.php:18
  * @route '/admin/curriculum-syllabus/store'
  */
 export const store = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -16,7 +16,7 @@ store.definition = {
 
 /**
 * @see \App\Http\Controllers\Backend\CurriculumSyllabusController::store
- * @see app/Http/Controllers/Backend/CurriculumSyllabusController.php:17
+ * @see app/Http/Controllers/Backend/CurriculumSyllabusController.php:18
  * @route '/admin/curriculum-syllabus/store'
  */
 store.url = (options?: RouteQueryOptions) => {
@@ -25,7 +25,7 @@ store.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\Backend\CurriculumSyllabusController::store
- * @see app/Http/Controllers/Backend/CurriculumSyllabusController.php:17
+ * @see app/Http/Controllers/Backend/CurriculumSyllabusController.php:18
  * @route '/admin/curriculum-syllabus/store'
  */
 store.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -35,7 +35,7 @@ store.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
 
     /**
 * @see \App\Http\Controllers\Backend\CurriculumSyllabusController::store
- * @see app/Http/Controllers/Backend/CurriculumSyllabusController.php:17
+ * @see app/Http/Controllers/Backend/CurriculumSyllabusController.php:18
  * @route '/admin/curriculum-syllabus/store'
  */
     const storeForm = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -45,7 +45,7 @@ store.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
 
             /**
 * @see \App\Http\Controllers\Backend\CurriculumSyllabusController::store
- * @see app/Http/Controllers/Backend/CurriculumSyllabusController.php:17
+ * @see app/Http/Controllers/Backend/CurriculumSyllabusController.php:18
  * @route '/admin/curriculum-syllabus/store'
  */
         storeForm.post = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -145,7 +145,7 @@ update.put = (args: { curriculumSyllabus: number | { id: number } } | [curriculu
     update.form = updateForm
 /**
 * @see \App\Http\Controllers\Backend\CurriculumSyllabusController::destroy
- * @see app/Http/Controllers/Backend/CurriculumSyllabusController.php:57
+ * @see app/Http/Controllers/Backend/CurriculumSyllabusController.php:56
  * @route '/admin/curriculum-syllabus/delete/{curriculumSyllabus}'
  */
 export const destroy = (args: { curriculumSyllabus: number | { id: number } } | [curriculumSyllabus: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'delete'> => ({
@@ -160,7 +160,7 @@ destroy.definition = {
 
 /**
 * @see \App\Http\Controllers\Backend\CurriculumSyllabusController::destroy
- * @see app/Http/Controllers/Backend/CurriculumSyllabusController.php:57
+ * @see app/Http/Controllers/Backend/CurriculumSyllabusController.php:56
  * @route '/admin/curriculum-syllabus/delete/{curriculumSyllabus}'
  */
 destroy.url = (args: { curriculumSyllabus: number | { id: number } } | [curriculumSyllabus: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions) => {
@@ -193,7 +193,7 @@ destroy.url = (args: { curriculumSyllabus: number | { id: number } } | [curricul
 
 /**
 * @see \App\Http\Controllers\Backend\CurriculumSyllabusController::destroy
- * @see app/Http/Controllers/Backend/CurriculumSyllabusController.php:57
+ * @see app/Http/Controllers/Backend/CurriculumSyllabusController.php:56
  * @route '/admin/curriculum-syllabus/delete/{curriculumSyllabus}'
  */
 destroy.delete = (args: { curriculumSyllabus: number | { id: number } } | [curriculumSyllabus: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'delete'> => ({
@@ -203,7 +203,7 @@ destroy.delete = (args: { curriculumSyllabus: number | { id: number } } | [curri
 
     /**
 * @see \App\Http\Controllers\Backend\CurriculumSyllabusController::destroy
- * @see app/Http/Controllers/Backend/CurriculumSyllabusController.php:57
+ * @see app/Http/Controllers/Backend/CurriculumSyllabusController.php:56
  * @route '/admin/curriculum-syllabus/delete/{curriculumSyllabus}'
  */
     const destroyForm = (args: { curriculumSyllabus: number | { id: number } } | [curriculumSyllabus: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -218,7 +218,7 @@ destroy.delete = (args: { curriculumSyllabus: number | { id: number } } | [curri
 
             /**
 * @see \App\Http\Controllers\Backend\CurriculumSyllabusController::destroy
- * @see app/Http/Controllers/Backend/CurriculumSyllabusController.php:57
+ * @see app/Http/Controllers/Backend/CurriculumSyllabusController.php:56
  * @route '/admin/curriculum-syllabus/delete/{curriculumSyllabus}'
  */
         destroyForm.delete = (args: { curriculumSyllabus: number | { id: number } } | [curriculumSyllabus: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({

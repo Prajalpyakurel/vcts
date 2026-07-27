@@ -1,7 +1,7 @@
 import { queryParams, type RouteQueryOptions, type RouteDefinition, type RouteFormDefinition, applyUrlDefaults } from './../../../../../wayfinder'
 /**
 * @see \App\Http\Controllers\Backend\CurriculumController::index
- * @see app/Http/Controllers/Backend/CurriculumController.php:21
+ * @see app/Http/Controllers/Backend/CurriculumController.php:22
  * @route '/admin/curriculum'
  */
 export const index = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -16,7 +16,7 @@ index.definition = {
 
 /**
 * @see \App\Http\Controllers\Backend\CurriculumController::index
- * @see app/Http/Controllers/Backend/CurriculumController.php:21
+ * @see app/Http/Controllers/Backend/CurriculumController.php:22
  * @route '/admin/curriculum'
  */
 index.url = (options?: RouteQueryOptions) => {
@@ -25,7 +25,7 @@ index.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\Backend\CurriculumController::index
- * @see app/Http/Controllers/Backend/CurriculumController.php:21
+ * @see app/Http/Controllers/Backend/CurriculumController.php:22
  * @route '/admin/curriculum'
  */
 index.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -34,7 +34,7 @@ index.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 })
 /**
 * @see \App\Http\Controllers\Backend\CurriculumController::index
- * @see app/Http/Controllers/Backend/CurriculumController.php:21
+ * @see app/Http/Controllers/Backend/CurriculumController.php:22
  * @route '/admin/curriculum'
  */
 index.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -44,7 +44,7 @@ index.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
     /**
 * @see \App\Http\Controllers\Backend\CurriculumController::index
- * @see app/Http/Controllers/Backend/CurriculumController.php:21
+ * @see app/Http/Controllers/Backend/CurriculumController.php:22
  * @route '/admin/curriculum'
  */
     const indexForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -54,7 +54,7 @@ index.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
             /**
 * @see \App\Http\Controllers\Backend\CurriculumController::index
- * @see app/Http/Controllers/Backend/CurriculumController.php:21
+ * @see app/Http/Controllers/Backend/CurriculumController.php:22
  * @route '/admin/curriculum'
  */
         indexForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -63,7 +63,7 @@ index.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
         })
             /**
 * @see \App\Http\Controllers\Backend\CurriculumController::index
- * @see app/Http/Controllers/Backend/CurriculumController.php:21
+ * @see app/Http/Controllers/Backend/CurriculumController.php:22
  * @route '/admin/curriculum'
  */
         indexForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -79,7 +79,7 @@ index.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
     index.form = indexForm
 /**
 * @see \App\Http\Controllers\Backend\CurriculumController::create
- * @see app/Http/Controllers/Backend/CurriculumController.php:32
+ * @see app/Http/Controllers/Backend/CurriculumController.php:33
  * @route '/admin/curriculum/create'
  */
 export const create = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -94,7 +94,7 @@ create.definition = {
 
 /**
 * @see \App\Http\Controllers\Backend\CurriculumController::create
- * @see app/Http/Controllers/Backend/CurriculumController.php:32
+ * @see app/Http/Controllers/Backend/CurriculumController.php:33
  * @route '/admin/curriculum/create'
  */
 create.url = (options?: RouteQueryOptions) => {
@@ -103,7 +103,7 @@ create.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\Backend\CurriculumController::create
- * @see app/Http/Controllers/Backend/CurriculumController.php:32
+ * @see app/Http/Controllers/Backend/CurriculumController.php:33
  * @route '/admin/curriculum/create'
  */
 create.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -112,7 +112,7 @@ create.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 })
 /**
 * @see \App\Http\Controllers\Backend\CurriculumController::create
- * @see app/Http/Controllers/Backend/CurriculumController.php:32
+ * @see app/Http/Controllers/Backend/CurriculumController.php:33
  * @route '/admin/curriculum/create'
  */
 create.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -122,7 +122,7 @@ create.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
     /**
 * @see \App\Http\Controllers\Backend\CurriculumController::create
- * @see app/Http/Controllers/Backend/CurriculumController.php:32
+ * @see app/Http/Controllers/Backend/CurriculumController.php:33
  * @route '/admin/curriculum/create'
  */
     const createForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -132,7 +132,7 @@ create.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
             /**
 * @see \App\Http\Controllers\Backend\CurriculumController::create
- * @see app/Http/Controllers/Backend/CurriculumController.php:32
+ * @see app/Http/Controllers/Backend/CurriculumController.php:33
  * @route '/admin/curriculum/create'
  */
         createForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -141,7 +141,7 @@ create.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
         })
             /**
 * @see \App\Http\Controllers\Backend\CurriculumController::create
- * @see app/Http/Controllers/Backend/CurriculumController.php:32
+ * @see app/Http/Controllers/Backend/CurriculumController.php:33
  * @route '/admin/curriculum/create'
  */
         createForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -157,7 +157,7 @@ create.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
     create.form = createForm
 /**
 * @see \App\Http\Controllers\Backend\CurriculumController::store
- * @see app/Http/Controllers/Backend/CurriculumController.php:43
+ * @see app/Http/Controllers/Backend/CurriculumController.php:44
  * @route '/admin/curriculum/store'
  */
 export const store = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -172,7 +172,7 @@ store.definition = {
 
 /**
 * @see \App\Http\Controllers\Backend\CurriculumController::store
- * @see app/Http/Controllers/Backend/CurriculumController.php:43
+ * @see app/Http/Controllers/Backend/CurriculumController.php:44
  * @route '/admin/curriculum/store'
  */
 store.url = (options?: RouteQueryOptions) => {
@@ -181,7 +181,7 @@ store.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\Backend\CurriculumController::store
- * @see app/Http/Controllers/Backend/CurriculumController.php:43
+ * @see app/Http/Controllers/Backend/CurriculumController.php:44
  * @route '/admin/curriculum/store'
  */
 store.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -191,7 +191,7 @@ store.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
 
     /**
 * @see \App\Http\Controllers\Backend\CurriculumController::store
- * @see app/Http/Controllers/Backend/CurriculumController.php:43
+ * @see app/Http/Controllers/Backend/CurriculumController.php:44
  * @route '/admin/curriculum/store'
  */
     const storeForm = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -201,7 +201,7 @@ store.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
 
             /**
 * @see \App\Http\Controllers\Backend\CurriculumController::store
- * @see app/Http/Controllers/Backend/CurriculumController.php:43
+ * @see app/Http/Controllers/Backend/CurriculumController.php:44
  * @route '/admin/curriculum/store'
  */
         storeForm.post = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -212,7 +212,7 @@ store.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
     store.form = storeForm
 /**
 * @see \App\Http\Controllers\Backend\CurriculumController::edit
- * @see app/Http/Controllers/Backend/CurriculumController.php:64
+ * @see app/Http/Controllers/Backend/CurriculumController.php:65
  * @route '/admin/curriculum/edit/{curriculum}'
  */
 export const edit = (args: { curriculum: number | { id: number } } | [curriculum: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -227,7 +227,7 @@ edit.definition = {
 
 /**
 * @see \App\Http\Controllers\Backend\CurriculumController::edit
- * @see app/Http/Controllers/Backend/CurriculumController.php:64
+ * @see app/Http/Controllers/Backend/CurriculumController.php:65
  * @route '/admin/curriculum/edit/{curriculum}'
  */
 edit.url = (args: { curriculum: number | { id: number } } | [curriculum: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions) => {
@@ -260,7 +260,7 @@ edit.url = (args: { curriculum: number | { id: number } } | [curriculum: number 
 
 /**
 * @see \App\Http\Controllers\Backend\CurriculumController::edit
- * @see app/Http/Controllers/Backend/CurriculumController.php:64
+ * @see app/Http/Controllers/Backend/CurriculumController.php:65
  * @route '/admin/curriculum/edit/{curriculum}'
  */
 edit.get = (args: { curriculum: number | { id: number } } | [curriculum: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -269,7 +269,7 @@ edit.get = (args: { curriculum: number | { id: number } } | [curriculum: number 
 })
 /**
 * @see \App\Http\Controllers\Backend\CurriculumController::edit
- * @see app/Http/Controllers/Backend/CurriculumController.php:64
+ * @see app/Http/Controllers/Backend/CurriculumController.php:65
  * @route '/admin/curriculum/edit/{curriculum}'
  */
 edit.head = (args: { curriculum: number | { id: number } } | [curriculum: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -279,7 +279,7 @@ edit.head = (args: { curriculum: number | { id: number } } | [curriculum: number
 
     /**
 * @see \App\Http\Controllers\Backend\CurriculumController::edit
- * @see app/Http/Controllers/Backend/CurriculumController.php:64
+ * @see app/Http/Controllers/Backend/CurriculumController.php:65
  * @route '/admin/curriculum/edit/{curriculum}'
  */
     const editForm = (args: { curriculum: number | { id: number } } | [curriculum: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -289,7 +289,7 @@ edit.head = (args: { curriculum: number | { id: number } } | [curriculum: number
 
             /**
 * @see \App\Http\Controllers\Backend\CurriculumController::edit
- * @see app/Http/Controllers/Backend/CurriculumController.php:64
+ * @see app/Http/Controllers/Backend/CurriculumController.php:65
  * @route '/admin/curriculum/edit/{curriculum}'
  */
         editForm.get = (args: { curriculum: number | { id: number } } | [curriculum: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -298,7 +298,7 @@ edit.head = (args: { curriculum: number | { id: number } } | [curriculum: number
         })
             /**
 * @see \App\Http\Controllers\Backend\CurriculumController::edit
- * @see app/Http/Controllers/Backend/CurriculumController.php:64
+ * @see app/Http/Controllers/Backend/CurriculumController.php:65
  * @route '/admin/curriculum/edit/{curriculum}'
  */
         editForm.head = (args: { curriculum: number | { id: number } } | [curriculum: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -314,7 +314,7 @@ edit.head = (args: { curriculum: number | { id: number } } | [curriculum: number
     edit.form = editForm
 /**
 * @see \App\Http\Controllers\Backend\CurriculumController::update
- * @see app/Http/Controllers/Backend/CurriculumController.php:77
+ * @see app/Http/Controllers/Backend/CurriculumController.php:78
  * @route '/admin/curriculum/update/{curriculum}'
  */
 export const update = (args: { curriculum: number | { id: number } } | [curriculum: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'put'> => ({
@@ -329,7 +329,7 @@ update.definition = {
 
 /**
 * @see \App\Http\Controllers\Backend\CurriculumController::update
- * @see app/Http/Controllers/Backend/CurriculumController.php:77
+ * @see app/Http/Controllers/Backend/CurriculumController.php:78
  * @route '/admin/curriculum/update/{curriculum}'
  */
 update.url = (args: { curriculum: number | { id: number } } | [curriculum: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions) => {
@@ -362,7 +362,7 @@ update.url = (args: { curriculum: number | { id: number } } | [curriculum: numbe
 
 /**
 * @see \App\Http\Controllers\Backend\CurriculumController::update
- * @see app/Http/Controllers/Backend/CurriculumController.php:77
+ * @see app/Http/Controllers/Backend/CurriculumController.php:78
  * @route '/admin/curriculum/update/{curriculum}'
  */
 update.put = (args: { curriculum: number | { id: number } } | [curriculum: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'put'> => ({
@@ -372,7 +372,7 @@ update.put = (args: { curriculum: number | { id: number } } | [curriculum: numbe
 
     /**
 * @see \App\Http\Controllers\Backend\CurriculumController::update
- * @see app/Http/Controllers/Backend/CurriculumController.php:77
+ * @see app/Http/Controllers/Backend/CurriculumController.php:78
  * @route '/admin/curriculum/update/{curriculum}'
  */
     const updateForm = (args: { curriculum: number | { id: number } } | [curriculum: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -387,7 +387,7 @@ update.put = (args: { curriculum: number | { id: number } } | [curriculum: numbe
 
             /**
 * @see \App\Http\Controllers\Backend\CurriculumController::update
- * @see app/Http/Controllers/Backend/CurriculumController.php:77
+ * @see app/Http/Controllers/Backend/CurriculumController.php:78
  * @route '/admin/curriculum/update/{curriculum}'
  */
         updateForm.put = (args: { curriculum: number | { id: number } } | [curriculum: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -403,7 +403,7 @@ update.put = (args: { curriculum: number | { id: number } } | [curriculum: numbe
     update.form = updateForm
 /**
 * @see \App\Http\Controllers\Backend\CurriculumController::destroy
- * @see app/Http/Controllers/Backend/CurriculumController.php:97
+ * @see app/Http/Controllers/Backend/CurriculumController.php:98
  * @route '/admin/curriculum/delete/{curriculum}'
  */
 export const destroy = (args: { curriculum: number | { id: number } } | [curriculum: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'delete'> => ({
@@ -418,7 +418,7 @@ destroy.definition = {
 
 /**
 * @see \App\Http\Controllers\Backend\CurriculumController::destroy
- * @see app/Http/Controllers/Backend/CurriculumController.php:97
+ * @see app/Http/Controllers/Backend/CurriculumController.php:98
  * @route '/admin/curriculum/delete/{curriculum}'
  */
 destroy.url = (args: { curriculum: number | { id: number } } | [curriculum: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions) => {
@@ -451,7 +451,7 @@ destroy.url = (args: { curriculum: number | { id: number } } | [curriculum: numb
 
 /**
 * @see \App\Http\Controllers\Backend\CurriculumController::destroy
- * @see app/Http/Controllers/Backend/CurriculumController.php:97
+ * @see app/Http/Controllers/Backend/CurriculumController.php:98
  * @route '/admin/curriculum/delete/{curriculum}'
  */
 destroy.delete = (args: { curriculum: number | { id: number } } | [curriculum: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'delete'> => ({
@@ -461,7 +461,7 @@ destroy.delete = (args: { curriculum: number | { id: number } } | [curriculum: n
 
     /**
 * @see \App\Http\Controllers\Backend\CurriculumController::destroy
- * @see app/Http/Controllers/Backend/CurriculumController.php:97
+ * @see app/Http/Controllers/Backend/CurriculumController.php:98
  * @route '/admin/curriculum/delete/{curriculum}'
  */
     const destroyForm = (args: { curriculum: number | { id: number } } | [curriculum: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -476,7 +476,7 @@ destroy.delete = (args: { curriculum: number | { id: number } } | [curriculum: n
 
             /**
 * @see \App\Http\Controllers\Backend\CurriculumController::destroy
- * @see app/Http/Controllers/Backend/CurriculumController.php:97
+ * @see app/Http/Controllers/Backend/CurriculumController.php:98
  * @route '/admin/curriculum/delete/{curriculum}'
  */
         destroyForm.delete = (args: { curriculum: number | { id: number } } | [curriculum: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({

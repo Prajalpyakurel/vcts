@@ -24,6 +24,7 @@ class StoreCurriculumSyllabusRequest extends FormRequest
         return [
             'curricula_id' => 'required|exists:curricula,id',
             'name' => 'required|string|max:255',
+            'redirect_to' => 'nullable|string',
         ];
     }
 }
