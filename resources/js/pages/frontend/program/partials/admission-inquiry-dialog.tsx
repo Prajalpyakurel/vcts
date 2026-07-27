@@ -63,15 +63,7 @@ export function AdmissionInquiryDialog({
     return (
         <Dialog open={open} onOpenChange={onOpenChange}>
             <DialogTrigger asChild>{trigger}</DialogTrigger>
-            <DialogContent
-                className="max-h-[90vh] overflow-y-auto rounded-2xl border-0 bg-white p-0 shadow-2xl sm:max-w-md"
-                style={{
-                    position: 'fixed',
-                    top: '50%',
-                    left: '50%',
-                    transform: 'translate(-50%, -50%)',
-                }}
-            >
+            <DialogContent className="max-h-[90vh] overflow-y-auto rounded-2xl border-0 bg-white p-0 shadow-2xl sm:max-w-md">
                 {submitted ? (
                     <div className="flex flex-col items-center gap-3 px-6 py-10 text-center sm:px-8">
                         <div className="flex h-16 w-16 items-center justify-center rounded-full bg-rose-50">
@@ -89,7 +81,8 @@ export function AdmissionInquiryDialog({
                             shortly.
                         </DialogDescription>
                         <Button
-                            className="mt-3 w-full bg-[#b8112e] hover:bg-[#7d0d22]"
+                            className="mt-3 w-full hover:bg-[#7d0d22]"
+                            style={{ backgroundColor: '#b8112e' }}
                             onClick={() => onOpenChange(false)}
                         >
                             Close
@@ -98,7 +91,10 @@ export function AdmissionInquiryDialog({
                 ) : (
                     <>
                         <div className="border-b border-gray-100 bg-gradient-to-br from-rose-50 to-white px-6 py-6 sm:px-8">
-                            <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-[#b8112e]">
+                            <div
+                                className="mb-3 flex h-12 w-12 items-center justify-center rounded-xl"
+                                style={{ backgroundColor: '#b8112e' }}
+                            >
                                 <Mail size={22} className="text-white" />
                             </div>
                             <DialogTitle className="text-xl font-bold text-gray-900">
@@ -223,7 +219,8 @@ export function AdmissionInquiryDialog({
                             <Button
                                 type="submit"
                                 disabled={processing}
-                                className="mt-1 w-full gap-2 rounded-xl bg-[#b8112e] py-5 text-sm font-bold shadow-lg shadow-rose-200 hover:bg-[#7d0d22] hover:shadow-xl"
+                                className="mt-1 w-full gap-2 rounded-xl py-5 text-sm font-bold shadow-lg shadow-rose-200 hover:bg-[#7d0d22] hover:shadow-xl"
+                                style={{ backgroundColor: '#b8112e' }}
                             >
                                 {processing ? (
                                     <Loader2
