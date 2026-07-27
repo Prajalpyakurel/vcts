@@ -35,10 +35,10 @@ const reasons = [
 ];
 
 const stats = [
-    { value: '45+', label: 'Academic Programs' },
-    { value: '3,200+', label: 'Enrolled Students' },
-    { value: '180+', label: 'Qualified Faculty' },
-    { value: '98%', label: 'Placement Rate' },
+    { value: '3+', label: 'Academic Programs' },
+    { value: '1,500+', label: 'Enrolled Students' },
+    { value: '50+', label: 'Qualified Faculty' },
+    { value: '100%', label: 'Placement Rate' },
 ];
 
 export default function WhyChooseUs() {

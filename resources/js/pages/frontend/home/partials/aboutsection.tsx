@@ -29,7 +29,7 @@ export default function AboutSection() {
 
                         {/* Floating experience badge */}
                         <div className="absolute -bottom-6 -right-4 z-10 rounded-2xl border border-rose-100 bg-white p-5 shadow-xl lg:-right-8">
-                            <p className="text-4xl font-black text-[#b8112e]">25+</p>
+                            <p className="text-4xl font-black text-[#b8112e]">18+</p>
                             <p className="mt-0.5 text-xs font-bold uppercase tracking-wider text-gray-500">Years of<br/>Excellence</p>
                         </div>
 
@@ -39,7 +39,7 @@ export default function AboutSection() {
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#b8112e]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
                             </div>
                             <div>
-                                <p className="text-xl font-black text-gray-900">3,200+</p>
+                                <p className="text-xl font-black text-gray-900">1,500+</p>
                                 <p className="text-xs text-gray-500">Enrolled Students</p>
                             </div>
                         </div>
@@ -69,7 +69,7 @@ export default function AboutSection() {
                         </h2>
 
                         <p className="mb-8 border-l-4 border-[#b8112e] pl-4 text-base leading-relaxed text-gray-500">
-                            For over 25 years, Valley College has been dedicated to delivering quality higher education
+                            For over 18 years, Valley College has been dedicated to delivering quality higher education
                             that equips students with the technical knowledge, practical skills, and professional values
                             needed to thrive in a competitive world.
                         </p>

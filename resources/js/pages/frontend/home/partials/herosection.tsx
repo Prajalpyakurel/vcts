@@ -10,9 +10,9 @@ import { Autoplay, EffectFade } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 const stats = [
-    { icon: GraduationCap, value: '3200+', label: 'Students' },
-    { icon: Users, value: '180+', label: 'Faculty' },
-    { icon: Star, value: '25+', label: 'Years' },
+    { icon: GraduationCap, value: '1500+', label: 'Students' },
+    { icon: Users, value: '50+', label: 'Faculty' },
+    { icon: Star, value: '18+', label: 'Years' },
 ];
 
 function animateActiveSlide(swiper: SwiperType) {
