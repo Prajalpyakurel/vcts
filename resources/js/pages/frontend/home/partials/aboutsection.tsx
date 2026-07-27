@@ -20,7 +20,7 @@ export default function AboutSection() {
                         <div className="relative overflow-hidden rounded-3xl">
                             <img
                                 className="h-[420px] w-full object-cover lg:h-[500px]"
-                                src="assets/images/about/about_students.png"
+                                src="assets/images/about/about_lab_realistic.png"
                                 alt="Students at Valley College"
                             />
                             {/* Overlay gradient */}
