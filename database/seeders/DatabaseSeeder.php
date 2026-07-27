@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             SystemInformationSeeder::class,
+            FacultySeeder::class,
         ]);
 
         User::query()->firstOrCreate(
