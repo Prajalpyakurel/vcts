@@ -1,6 +1,6 @@
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Award, BookOpen, GraduationCap, Users } from 'lucide-react';
+import { Award, BookOpen, Briefcase, GraduationCap, Users } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 
 if (typeof window !== 'undefined') {
@@ -8,10 +8,11 @@ if (typeof window !== 'undefined') {
 }
 
 const counters = [
-    { icon: BookOpen, value: 45, title: 'Academic Programs' },
-    { icon: GraduationCap, value: 3200, title: 'Enrolled Students' },
-    { icon: Users, value: 180, title: 'Qualified Faculty' },
-    { icon: Award, value: 25, title: 'Years of Excellence' },
+    { icon: BookOpen, value: 3, suffix: '+', title: 'Academic Programs' },
+    { icon: GraduationCap, value: 1500, suffix: '+', title: 'Enrolled Students' },
+    { icon: Users, value: 50, suffix: '+', title: 'Qualified Faculty' },
+    { icon: Award, value: 18, suffix: '+', title: 'Years of Excellence' },
+    { icon: Briefcase, value: 100, suffix: '%', title: 'Placement Rate' },
 ];
 
 export default function CounterSection() {
@@ -67,7 +68,7 @@ export default function CounterSection() {
                 </div>
 
                 <div className="container relative mx-auto px-4">
-                    <div ref={gridRef} className="grid grid-cols-2 gap-8 lg:grid-cols-4">
+                    <div ref={gridRef} className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-5">
                         {counters.map((counter, index) => {
                             const Icon = counter.icon;
                             return (
@@ -76,7 +77,7 @@ export default function CounterSection() {
                                         <Icon size={32} className="text-white" />
                                     </div>
                                     <p className="text-4xl font-black text-white lg:text-5xl">
-                                        {counts[index]}<span className="text-[#e2a63b]">+</span>
+                                        {counts[index]}<span className="text-[#e2a63b]">{counter.suffix}</span>
                                     </p>
                                     <p className="mt-1.5 text-sm font-medium uppercase tracking-wider text-white/70">
                                         {counter.title}
