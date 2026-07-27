@@ -68,7 +68,7 @@ export default function CounterSection() {
                 </div>
 
                 <div className="container relative mx-auto px-4">
-                    <div ref={gridRef} className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-5">
+                    <div ref={gridRef} className="grid grid-cols-2 gap-8 sm:!grid-cols-3 lg:!grid-cols-5">
                         {counters.map((counter, index) => {
                             const Icon = counter.icon;
                             return (
