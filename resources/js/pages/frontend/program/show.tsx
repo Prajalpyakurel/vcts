@@ -1,7 +1,7 @@
 import { useScrollReveal } from '@/hooks/use-scroll-reveal';
 import BannerPageLayout from '@/layouts/frontend/app/banner-page-layout';
 import { Course, CourseCurriculum } from '@/pages/backend/course/types';
-import { Link } from '@inertiajs/react';
+import { AdmissionInquiryDialog } from '@/pages/frontend/program/partials/admission-inquiry-dialog';
 import {
     BookOpen,
     Building2,
@@ -254,13 +254,18 @@ export default function ProgramShow({ program }: { program: Course }) {
                                         {program.education_level}
                                     </div>
                                 </div>
-                                <Link
-                                    href="/contact"
-                                    className="relative mt-6 flex w-full items-center justify-center gap-2 rounded-xl bg-white px-5 py-3.5 text-sm font-bold text-[#b8112e] shadow-lg transition-all duration-300 hover:shadow-xl"
-                                >
-                                    <Mail size={16} />
-                                    Contact Admissions
-                                </Link>
+                                <AdmissionInquiryDialog
+                                    programName={program.name}
+                                    trigger={
+                                        <button
+                                            type="button"
+                                            className="relative mt-6 flex w-full items-center justify-center gap-2 rounded-xl bg-white px-5 py-3.5 text-sm font-bold text-[#b8112e] shadow-lg transition-all duration-300 hover:shadow-xl"
+                                        >
+                                            <Mail size={16} />
+                                            Contact Admissions
+                                        </button>
+                                    }
+                                />
                             </div>
                         </div>
                     </div>
