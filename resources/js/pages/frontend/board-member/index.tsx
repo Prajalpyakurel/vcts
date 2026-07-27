@@ -50,47 +50,44 @@ export default function Index({
                         </p>
                     </div>
 
-                    {/* Members grid */}
+                    {/* Members list */}
                     {boardMemberMessage.length > 0 ? (
-                        <div
-                            ref={gridRef}
-                            className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
-                        >
+                        <div ref={gridRef} className="flex flex-col gap-8">
                             {boardMemberMessage.map((member, index) => (
                                 <div
                                     key={index}
-                                    className="group relative flex flex-col items-center overflow-hidden rounded-2xl border border-gray-100 bg-white p-8 text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+                                    className="group flex flex-col overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm transition-all duration-300 hover:shadow-xl md:flex-row"
                                 >
-                                    {/* Top gradient bar */}
-                                    <div className="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-[#e2a63b] to-[#b8112e]" />
+                                    {/* Image - left */}
+                                    <div className="relative h-64 shrink-0 md:h-auto md:w-80">
+                                        {member.image ? (
+                                            <img
+                                                src={`/storage/${member.image}`}
+                                                alt={member.name}
+                                                className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                            />
+                                        ) : (
+                                            <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-[#003893] to-[#b8112e] text-5xl font-bold text-white">
+                                                {getInitials(member.name)}
+                                            </div>
+                                        )}
+                                        <div className="absolute inset-y-0 left-0 w-1 bg-gradient-to-b from-[#e2a63b] to-[#b8112e] md:hidden" />
+                                    </div>
 
-                                    {/* Avatar */}
-                                    {member.image ? (
-                                        <img
-                                            src={`/storage/${member.image}`}
-                                            alt={member.name}
-                                            className="h-32 w-32 shrink-0 rounded-full object-cover ring-4 ring-rose-50 transition-transform duration-300 group-hover:scale-105"
-                                        />
-                                    ) : (
-                                        <div className="flex h-32 w-32 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#003893] to-[#b8112e] text-3xl font-bold text-white ring-4 ring-rose-50 transition-transform duration-300 group-hover:scale-105">
-                                            {getInitials(member.name)}
-                                        </div>
-                                    )}
-
-                                    {/* Identity */}
-                                    <h3 className="mt-5 text-lg font-bold text-gray-900">
-                                        {member.name}
-                                    </h3>
-                                    <span className="mt-2 inline-flex items-center rounded-lg bg-rose-50 px-2.5 py-1 text-xs font-semibold text-[#b8112e]">
-                                        {member.designation}
-                                    </span>
-
-                                    {/* Message */}
-                                    <div className="mt-5">
-                                        <FaQuoteLeft className="mx-auto mb-3 text-2xl text-[#b8112e]/15" />
-                                        <p className="leading-relaxed text-gray-600">
+                                    {/* Message - right */}
+                                    <div className="flex flex-1 flex-col justify-center p-8">
+                                        <FaQuoteLeft className="mb-3 text-3xl text-[#b8112e]/15" />
+                                        <p className="text-lg leading-relaxed text-gray-600 italic">
                                             {member.message}
                                         </p>
+                                        <div className="mt-6 border-t border-gray-100 pt-4">
+                                            <h3 className="text-lg font-bold text-gray-900">
+                                                {member.name}
+                                            </h3>
+                                            <span className="mt-2 inline-flex items-center rounded-lg bg-rose-50 px-2.5 py-1 text-xs font-semibold text-[#b8112e]">
+                                                {member.designation}
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                             ))}
