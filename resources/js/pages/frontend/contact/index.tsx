@@ -327,7 +327,7 @@ export default function Index({ flash }: { flash: FlashMessageInterface }) {
                                     </div>
                                     <div className="flex items-center gap-3">
                                         <Clock size={18} className="shrink-0 text-[#e2a63b]" />
-                                        <span>Saturday: Closed</span>
+                                        <span>Saturday - Sunday: Closed</span>
                                     </div>
                                 </div>
 
