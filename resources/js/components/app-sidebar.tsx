@@ -14,6 +14,7 @@ import {
     heroSectionindex,
     studentFeedbackIndex,
     courseIndex,
+    curriculumIndex,
     facultyIndex,
     boardMemberMessageIndex,
     eventIndex,
@@ -36,6 +37,7 @@ import {
     Download,
     Settings,
     GalleryHorizontalIcon,
+    SquarePenIcon,
 } from 'lucide-react';
 import AppLogo from './app-logo';
 
@@ -80,6 +82,11 @@ const mainNavItems: NavItem[] = [
     },
 
     // Academic Structure
+    {
+        title: 'Curriculum',
+        href: curriculumIndex(),
+        icon: SquarePenIcon,
+    },
     {
         title: 'Faculties',
         href: facultyIndex(),

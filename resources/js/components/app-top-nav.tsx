@@ -12,6 +12,7 @@ import {
     boardMemberMessageIndex,
     contactIndex,
     courseIndex,
+    curriculumIndex,
     dashboard,
     downloadIndex,
     eventIndex,
@@ -37,6 +38,7 @@ import {
     Menu,
     MessageSquare,
     Settings,
+    SquarePenIcon,
     X,
 } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
@@ -59,6 +61,7 @@ const navGroups = [
         icon: BookOpen,
         items: [
             { title: 'Courses', href: courseIndex(), icon: BookOpen },
+            { title: 'Curriculum', href: curriculumIndex(), icon: SquarePenIcon },
             { title: 'Faculties', href: facultyIndex(), icon: GraduationCap },
         ],
     },
