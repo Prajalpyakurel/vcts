@@ -323,7 +323,7 @@ export default function Index({ flash }: { flash: FlashMessageInterface }) {
                                 <div className="space-y-4 text-sm text-white/80">
                                     <div className="flex items-center gap-3">
                                         <Clock size={18} className="shrink-0 text-[#e2a63b]" />
-                                        <span>Sunday – Friday: 9:00 AM – 5:00 PM</span>
+                                        <span>Monday – Friday: 7:00 AM – 2:00 PM</span>
                                     </div>
                                     <div className="flex items-center gap-3">
                                         <Clock size={18} className="shrink-0 text-[#e2a63b]" />
